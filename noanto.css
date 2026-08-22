@@ -4,19 +4,20 @@ html {
 }
 
 body {
-    /* Textura de ruído granulado sutil (moderno) */
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.03'/%3E%3C/svg%3E");
+    /* REMOVIDO o SVG de ruído que causa travamento e tela branca no iPhone */
+    /* Agora usamos apenas a cor de fundo definida no Tailwind */
+    background-color: #F4ECE1; 
 }
 
 /* Glassmorphism na barra de navegação acompanhando o novo bege */
 .glass-nav {
     background: rgba(244, 236, 225, 0.85);
     backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px); /* Esta linha é OBRIGATÓRIA para funcionar no iPhone */
     border-bottom: 1px solid rgba(114, 28, 36, 0.05);
 }
 
-/* Custom Scrollbar Elegante */
+/* Custom Scrollbar Elegante (Barras de rolagem customizadas funcionam apenas em Desktop) */
 .custom-scrollbar::-webkit-scrollbar {
     width: 6px;
 }
