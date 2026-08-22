@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="es-MX">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Noanto - Distribuidora de Quesos Premium</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    
+    <!-- Configurações Locais -->
+    <script src="noanto.js"></script>
+    <link rel="stylesheet" href="noanto.css">
+</head>
+<body class="bg-cream text-charcoal font-sans custom-scrollbar selection:bg-gold selection:text-white flex flex-col min-h-screen">
+    
+    <!-- Top Navigation Bar (Glassmorphism) -->
+    <nav class="glass-nav flex justify-between items-center w-full px-5 md:px-16 py-4 fixed top-0 z-50 transition-all duration-300">
+        <div class="flex items-center gap-3">
+            <img alt="Noanto Logo" class="h-10 w-10 rounded-full object-cover shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAI_N6ZMugwekVh2r6HYrCVbYLMzrmfzIwJkwA2DaAR4ZbHtyHa1ltw0f3YaGwG7IJAb0tlhFCYivZh3KwtQ8gzvqcvRzDbeQRey0TOHzn3npzRAuRCTvCuzAr85aBffbum3GiqJxRlFsRvuwcX8-fbJGPVno_aSXotl4ISGCFQaOuCkb6GcTtHKJvf_BmiD6_KUSeoWqKisMCuKLdDybEd9CliT2MLeoUVfBrqQRd0Hydvs7YLX_SMwVXPfSqRmV3igA">
+            <span class="text-xl font-serif font-bold text-wine-dark tracking-tight">Noanto<span class="text-gold">.</span></span>
+        </div>
+        <div class="hidden md:flex gap-10 items-center">
+            <a class="text-sm font-medium text-wine border-b-2 border-gold pb-1" href="#">Inicio</a>
+            <a class="text-sm font-medium text-charcoal/70 hover:text-wine transition-colors" href="#catalog">Catálogo</a>
+            <a class="text-sm font-medium text-charcoal/70 hover:text-wine transition-colors" href="#">Nosotros</a>
+            <a class="text-sm font-medium text-charcoal/70 hover:text-wine transition-colors" href="#">Mayoreo</a>
+        </div>
+        <a class="bg-wine text-white px-5 py-2.5 text-sm font-medium rounded-full flex items-center gap-2 hover:bg-wine-light hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300" href="https://wa.me/5581333256">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+            </svg>
+            <span class="hidden sm:inline">Hablemos</span>
+        </a>
+    </nav>
+
+    <!-- Main Content Flex Wrapper -->
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <section class="relative max-w-7xl mx-auto px-5 md:px-16 pt-32 md:pt-40 pb-16 md:pb-24 flex flex-col-reverse md:flex-row items-center gap-10 lg:gap-20">
+            <div class="w-full md:w-1/2 flex flex-col gap-6 animate-fade-up">
+                <span class="inline-block self-start text-wine text-xs uppercase tracking-widest font-bold bg-wine/10 px-4 py-1.5 rounded-full">
+                    Distribución Mayorista
+                </span>
+                <h1 class="text-4xl md:text-5xl lg:text-[64px] font-serif leading-[1.1] md:leading-[1.05] text-wine-dark">
+                    El arte del <span class="italic text-wine">buen queso</span> para tu negocio.
+                </h1>
+                <p class="text-base text-charcoal/80 max-w-md font-light leading-relaxed">
+                    Curaduría especializada. Surtimos a restaurantes y delicatessens con productos de origen artesanal e inigualable calidad.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center gap-4 mt-4 w-full">
+                    <a class="w-full sm:w-auto bg-wine text-white px-8 py-3.5 rounded-full text-sm font-medium hover:bg-wine-light transition-all duration-300 text-center shadow-[0_8px_30px_rgb(114,28,36,0.2)] hover:shadow-[0_8px_30px_rgb(114,28,36,0.4)] hover:-translate-y-1" href="#catalog">
+                        Explorar Catálogo
+                    </a>
+                    <a class="w-full sm:w-auto border border-charcoal/20 bg-white/50 text-charcoal px-8 py-3.5 rounded-full text-sm font-medium flex items-center justify-center gap-2 hover:border-wine hover:text-wine transition-all duration-300" href="https://wa.me/5581333256">
+                        Cotizar por WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Premium Carousel -->
+            <div class="w-full md:w-1/2 relative mt-10 md:mt-0">
+                <div class="absolute inset-0 bg-gold/20 rounded-[2.5rem] md:rounded-[3rem] transform translate-x-3 translate-y-3 md:translate-x-4 md:translate-y-4 -z-10"></div>
+                <div class="aspect-[4/3] w-full rounded-[2.5rem] md:rounded-[3rem] overflow-hidden shadow-2xl relative group bg-charcoal/5">
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvA2n3YZ0xB2Y9H2LvKKda1e1wNS_rCwz4xf1PCWbmXKThfKgReYiQukEwuZSVwN5kZGQVkYYzfutBevoKYT9qUlemZ6HNWy9FAvlDSO9XTAgSXE1yazwR3ujB7nWq2d3iAKxucGkTw0aBDCU_TPRU-jCHBIsUcFtc7Vl4dBUazK9LwyjKBxv2XBmT1W_lg7zATpLGHcenvnjXJJpIM9w-Nzkvdh5TDQV58P3tRcWufXnw_AT2_6QB" alt="Plato de quesos 1" class="carousel-slide absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-100">
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDhAC_L7FV6p72CEQI6r8BVjQ9I8AXIucP7j53cMlpVip7QjFr7rwlCVenKDn6vqR99YOzd28aXG-XZlGqolY5Zb-aBVhGc8x-6OCcoG9YR7Jr8CVJKLKkF2I765__kWdBwG0gwCnaurxGKEwz_1iyb8zDoT_G78HjkHlVzaX9AkL0Dp8CmmLMf8RM7Ht7u_mX7GCT34KGj_L955VS1MuIcKjkbnanNdLGDoYGOICPbnOLpqCsjFj3" alt="Plato de quesos 2" class="carousel-slide absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0">
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsOUJY_Y2FmTmP3vwPC-qzxUmoE_O49x1rUr-bo_l8u73NY-eJG8cpoyM9wtZcd-7yrXSy5qwitoNxMVBbM56vtEGAqXCnLatAxGqPzsUer7DRrI_78sLEa3QVPR7mQZB-Kd-BuVIHmvPsCWDMDB_IiArdm4XRTFo0M1y-C9CGMJ-TR5OkBLHeaeDnGU89-Y-YGt9Nr29acnjK77fPiqLUWuC9BMm91zxzfh0G_DG391rgEp1IkvUn" alt="Plato de quesos 3" class="carousel-slide absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0">
+
+                    <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex gap-2 z-10">
+                        <span class="carousel-dot block h-2 rounded-full bg-white/90 transition-all duration-300 w-6"></span>
+                        <span class="carousel-dot block h-2 rounded-full bg-white/40 transition-all duration-300 w-2"></span>
+                        <span class="carousel-dot block h-2 rounded-full bg-white/40 transition-all duration-300 w-2"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories Showcase -->
+        <section class="max-w-7xl mx-auto px-5 md:px-16 py-16 md:py-20" id="catalog">
+            <div class="text-center max-w-xl mx-auto mb-12 md:mb-16 animate-fade-up" style="animation-delay: 0.2s;">
+                <h2 class="text-3xl md:text-5xl font-serif text-wine-dark mb-4">Nuestras Categorías</h2>
+                <div class="w-16 h-1 bg-gold mx-auto mb-6"></div>
+                <p class="text-sm md:text-lg text-charcoal/70 font-light">Explora nuestro catálogo dividido en tres grandes familias de productos premium.</p>
+            </div>
+
+            <!-- Grade Responsiva com 3 Cards Grandes -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10">
+                
+                <!-- Categoria 1: Quesos -->
+                <div class="bg-white rounded-[2.5rem] overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 group border border-cream-dark flex flex-col">
+                    <div class="aspect-[4/5] w-full overflow-hidden relative">
+                        <img alt="Quesos Artesanales" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?q=80&w=800&auto=format&fit=crop">
+                        <div class="absolute inset-0 bg-wine/0 group-hover:bg-wine/10 transition-colors duration-300"></div>
+                    </div>
+                    <div class="p-8 flex flex-col gap-3 flex-grow">
+                        <h3 class="text-3xl md:text-2xl lg:text-3xl font-serif text-wine-dark leading-tight">Quesos</h3>
+                        <p class="text-charcoal/70 font-light text-sm md:text-base mb-4">Nuestra selección curada de quesos artesanales, añejos y frescos de la más alta calidad.</p>
+                        <div class="mt-auto pt-6 border-t border-charcoal/10">
+                            <a class="block w-full text-center border-2 border-wine text-wine py-3.5 text-sm font-medium rounded-full hover:bg-wine hover:text-white transition-all duration-300" href="https://wa.me/5581333256?text=Hola, me gustaría recibir el catálogo de Quesos.">Ver Catálogo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Categoria 2: Embutidos (FOTO GARANTIDA DE SALAME/LINGUIÇA) -->
+                <div class="bg-white rounded-[2.5rem] overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 group border border-cream-dark flex flex-col">
+                    <div class="aspect-[4/5] w-full overflow-hidden relative">
+                        <img alt="Embutidos y Charcutería" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://images.unsplash.com/photo-1585325701165-351af916e581?auto=format&fit=crop&w=800&q=80">
+                        <div class="absolute inset-0 bg-wine/0 group-hover:bg-wine/10 transition-colors duration-300"></div>
+                    </div>
+                    <div class="p-8 flex flex-col gap-3 flex-grow">
+                        <h3 class="text-3xl md:text-2xl lg:text-3xl font-serif text-wine-dark leading-tight">Embutidos</h3>
+                        <p class="text-charcoal/70 font-light text-sm md:text-base mb-4">Descubre nuestra fina selección de jamones, salamis y charcutería de origen internacional.</p>
+                        <div class="mt-auto pt-6 border-t border-charcoal/10">
+                            <a class="block w-full text-center border-2 border-wine text-wine py-3.5 text-sm font-medium rounded-full hover:bg-wine hover:text-white transition-all duration-300" href="https://wa.me/5581333256?text=Hola, me gustaría recibir el catálogo de Embutidos.">Ver Catálogo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Categoria 3: Lácteos -->
+                <div class="bg-white rounded-[2.5rem] overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 group border border-cream-dark flex flex-col">
+                    <div class="aspect-[4/5] w-full overflow-hidden relative">
+                        <img alt="Lácteos Premium" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://images.unsplash.com/photo-1628088062854-d1870b4553da?q=80&w=800&auto=format&fit=crop">
+                        <div class="absolute inset-0 bg-wine/0 group-hover:bg-wine/10 transition-colors duration-300"></div>
+                    </div>
+                    <div class="p-8 flex flex-col gap-3 flex-grow">
+                        <h3 class="text-3xl md:text-2xl lg:text-3xl font-serif text-wine-dark leading-tight">Lácteos</h3>
+                        <p class="text-charcoal/70 font-light text-sm md:text-base mb-4">Mantequillas, cremas y productos lácteos de origen natural para enriquecer tus recetas.</p>
+                        <div class="mt-auto pt-6 border-t border-charcoal/10">
+                            <a class="block w-full text-center border-2 border-wine text-wine py-3.5 text-sm font-medium rounded-full hover:bg-wine hover:text-white transition-all duration-300" href="https://wa.me/5581333256?text=Hola, me gustaría recibir el catálogo de Lácteos.">Ver Catálogo</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Floating Rounded Footer Responsivo -->
+    <footer class="bg-wine-dark text-cream border border-wine-light/30 mx-4 md:mx-8 mb-6 md:mb-8 mt-4 rounded-[2.5rem] lg:rounded-[3rem] shadow-2xl relative z-10 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 py-10 md:py-14 flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">
+            <div class="flex flex-col md:flex-row items-center gap-4 md:gap-5">
+                <img alt="Noanto Logo" class="h-12 w-12 md:h-14 md:w-14 rounded-full border-2 border-gold/50 shadow-md" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjk7tStclocpalN8Eq01UsmdR04rzr39VMTD05s8qV0SZSRTEoGpwtgccQeUyCVDPcLAAeVoPaVq1yEAnvjYcc2QSXMMqUjqtrwke7bYy8RVUgSKx3YkmraiC5T23s2Kwm_WQa_-NhQKGTZcQsTMD02UZ7inIcIsiSGu3zQLIqsJKbftFwXbGETW9K56J-t6Am8DwiPHaI80xNDd2YJDv09LiOJDiDnumV-TKGB29sdksSCx6HL-NglTBVpLELCjOAkQ">
+                <div>
+                    <span class="block text-2xl md:text-xl font-serif font-bold text-white tracking-wide">Noanto<span class="text-gold">.</span></span>
+                    <span class="text-[11px] md:text-[10px] text-cream/70 uppercase tracking-[0.2em] font-medium mt-1 md:mt-0 block">Alta Culinária</span>
+                </div>
+            </div>
+            
+            <div class="flex flex-col gap-2 items-center md:items-end mt-4 md:mt-0">
+                <p class="text-sm font-light text-cream/80">© 2024 Noanto Distribuidora.</p>
+                <p class="text-xs font-light text-cream/50">Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating FAB -->
+    <a class="fixed bottom-6 right-6 md:bottom-8 md:right-8 bg-[#25D366] text-white w-14 h-14 md:w-16 md:h-16 rounded-full flex items-center justify-center shadow-[0_8px_16px_rgba(37,211,102,0.3)] hover:scale-110 hover:shadow-[0_10px_20px_rgba(37,211,102,0.4)] transition-all duration-300 z-50 animate-float" href="https://wa.me/5581333256">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 16 16" class="w-7 h-7 md:w-8 md:h-8">
+            <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+        </svg>
+    </a>
+
+    <!-- Lógica do Carrossel -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const slides = document.querySelectorAll('.carousel-slide');
+            const dots = document.querySelectorAll('.carousel-dot');
+            let currentIndex = 0;
+
+            setInterval(() => {
+                slides[currentIndex].classList.remove('opacity-100');
+                slides[currentIndex].classList.add('opacity-0');
+                dots[currentIndex].classList.remove('bg-white/90', 'w-6');
+                dots[currentIndex].classList.add('bg-white/40', 'w-2');
+
+                currentIndex = (currentIndex + 1) % slides.length;
+
+                slides[currentIndex].classList.remove('opacity-0');
+                slides[currentIndex].classList.add('opacity-100');
+                dots[currentIndex].classList.remove('bg-white/40', 'w-2');
+                dots[currentIndex].classList.add('bg-white/90', 'w-6');
+            }, 4000);
+        });
+    </script>
+</body>
+</html>
