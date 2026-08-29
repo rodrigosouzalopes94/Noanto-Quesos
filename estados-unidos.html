@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="es-MX">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Estados Unidos - Noanto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="noanto.js"></script>
+    <link rel="stylesheet" href="noanto.css">
+</head>
+<body class="bg-cream text-charcoal font-sans custom-scrollbar selection:bg-gold selection:text-white flex flex-col min-h-screen">
+
+    <nav class="glass-nav flex justify-between items-center w-full px-5 md:px-16 py-4 fixed top-0 z-50 transition-all duration-300">
+        <a href="index.html" class="flex items-center gap-3">
+            <img alt="Noanto Logo" class="h-10 w-10 rounded-full object-cover shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAI_N6ZMugwekVh2r6HYrCVbYLMzrmfzIwJkwA2DaAR4ZbHtyHa1ltw0f3YaGwG7IJAb0tlhFCYivZh3KwtQ8gzvqcvRzDbeQRey0TOHzn3npzRAuRCTvCuzAr85aBffbum3GiqJxRlFsRvuwcX8-fbJGPVno_aSXotl4ISGCFQaOuCkb6GcTtHKJvf_BmiD6_KUSeoWqKisMCuKLdDybEd9CliT2MLeoUVfBrqQRd0Hydvs7YLX_SMwVXPfSqRmV3igA">
+            <span class="text-xl font-serif font-bold text-wine-dark tracking-tight">Noanto<span class="text-gold">.</span></span>
+        </a>
+        <div class="hidden md:flex gap-8 items-center">
+            <a class="text-sm font-medium text-charcoal/70 hover:text-wine transition-colors" href="index.html">Inicio</a>
+            <div class="relative group/paises">
+                <button type="button" class="flex items-center gap-1.5 text-sm font-medium text-charcoal/70 hover:text-wine transition-colors py-2">
+                    Países
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" class="transition-transform duration-300 group-hover/paises:rotate-180">
+                        <path d="M6 9l6 6 6-6"/>
+                    </svg>
+                </button>
+                <div class="absolute top-full left-1/2 -translate-x-1/2 pt-3 opacity-0 invisible translate-y-1 group-hover/paises:opacity-100 group-hover/paises:visible group-hover/paises:translate-y-0 focus-within:opacity-100 focus-within:visible focus-within:translate-y-0 transition-all duration-200 z-50">
+                    <div class="bg-white rounded-2xl shadow-[0_20px_50px_rgba(42,42,42,0.15)] border border-cream-dark p-3 grid grid-cols-2 gap-1 w-[380px]">
+                    <a href="francia.html" class="flex items-center gap-2.5 px-4 py-2.5 rounded-xl hover:bg-wine/5 hover:text-wine transition-colors text-sm text-charcoal/80"><span class="text-base leading-none">🇫🇷</span>Francia</a>
+                    <a href="italia.html" class="flex items-center gap-2.5 px-4 py-2.5 rounded-xl hover:bg-wine/5 hover:text-wine transition-colors text-sm text-charcoal/80"><span class="text-base leading-none">🇮🇹</span>Italia</a>
+                    <a href="suiza.html" class="flex items-center gap-2.5 px-4 py-2.5 rounded-xl hover:bg-wine/5 hover:text-wine transition-colors text-sm text-charcoal/80"><span class="text-base leading-none">🇨🇭</span>Suiza</a>
+                    <a href="holanda.html" class="flex items-center gap-2.5 px-4 py-2.5 rounded-xl hover:bg-wine/5 hover:text-wine transition-colors text-sm text-charcoal/80"><span class="text-base leading-none">🇳🇱</span>Holanda</a>
+                    <a href="espana.html" class="flex items-center gap-2.5 px-4 py-2.5 rounded-xl hover:bg-wine/5 hover:text-wine transition-colors text-sm text-charcoal/80"><span class="text-base leading-none">🇪🇸</span>España</a>
+                    <a href="reino-unido.html" class="flex items-center gap-2.5 px-4 py-2.5 rounded-xl hover:bg-wine/5 hover:text-wine transition-colors text-sm text-charcoal/80"><span class="text-base leading-none">🇬🇧</span>Reino Unido</a>
+                    <a href="estados-unidos.html" class="flex items-center gap-2.5 px-4 py-2.5 rounded-xl hover:bg-wine/5 hover:text-wine transition-colors text-sm text-charcoal/80"><span class="text-base leading-none">🇺🇸</span>Estados Unidos</a>
+                    <a href="dinamarca.html" class="flex items-center gap-2.5 px-4 py-2.5 rounded-xl hover:bg-wine/5 hover:text-wine transition-colors text-sm text-charcoal/80"><span class="text-base leading-none">🇩🇰</span>Dinamarca</a>
+                    <a href="nueva-zelanda.html" class="flex items-center gap-2.5 px-4 py-2.5 rounded-xl hover:bg-wine/5 hover:text-wine transition-colors text-sm text-charcoal/80"><span class="text-base leading-none">🇳🇿</span>Nueva Zelanda</a>
+                    <a href="uruguay.html" class="flex items-center gap-2.5 px-4 py-2.5 rounded-xl hover:bg-wine/5 hover:text-wine transition-colors text-sm text-charcoal/80"><span class="text-base leading-none">🇺🇾</span>Uruguay</a>
+                    <a href="mexico.html" class="flex items-center gap-2.5 px-4 py-2.5 rounded-xl hover:bg-wine/5 hover:text-wine transition-colors text-sm text-charcoal/80"><span class="text-base leading-none">🇲🇽</span>México</a>
+                    </div>
+                </div>
+            </div>
+            <a class="text-sm font-medium text-charcoal/70 hover:text-wine transition-colors" href="index.html#catalog">Catálogo</a>
+        </div>
+        <a class="bg-wine text-white px-5 py-2.5 text-sm font-medium rounded-full flex items-center gap-2 hover:bg-wine-light hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300" href="https://wa.me/5581333256">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+            </svg>
+            <span class="hidden sm:inline">Cotizar</span>
+        </a>
+    </nav>
+
+    <main class="flex-grow pt-32 pb-20 max-w-7xl mx-auto px-5 md:px-16 w-full">
+        <div class="flex flex-col md:flex-row gap-8 items-end mb-16 animate-fade-up">
+            <div class="w-full md:w-1/3 aspect-[4/3] rounded-[2rem] overflow-hidden shadow-lg relative group">
+                <img src="images/estados-unidos-hero.jpg" alt="Productos de Estados Unidos" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+            </div>
+            <div class="w-full md:w-2/3">
+                <span class="text-wine text-xs uppercase tracking-widest font-bold bg-wine/10 px-4 py-1.5 rounded-full">🇺🇸 Catálogo por país</span>
+                <h1 class="text-4xl md:text-5xl font-serif text-wine-dark mt-4 mb-3">Estados Unidos</h1>
+                <p class="text-charcoal/70 font-light max-w-xl">American cheese y cold cuts: los clásicos imprescindibles para tu barra, tu cocina y tu deli.</p>
+            </div>
+        </div>
+
+        <section class="mb-16 md:mb-20">
+            <div class="flex items-center gap-4 mb-8">
+                <h2 class="text-2xl md:text-3xl font-serif text-wine-dark">American Cheese</h2>
+                <div class="flex-grow h-px bg-gold/40"></div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-001.png" alt="Monterey Jack" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Monterey Jack</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">2/2.5 Kg.</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Monterey%20Jack%20%282/2.5%20Kg.%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-002.png" alt="Pepper Jack" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Pepper Jack</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">2/2.5 Kg.</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Pepper%20Jack%20%282/2.5%20Kg.%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-003.png" alt="Colby Jack" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Colby Jack</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">2/2.5 Kg.</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Colby%20Jack%20%282/2.5%20Kg.%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-004.png" alt="Brick BelGioioso" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Brick BelGioioso</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">2/2.5 Kg.</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Brick%20BelGioioso%20%282/2.5%20Kg.%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-005.png" alt="Fontina BelGioioso" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Fontina BelGioioso</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">2/2.5 Kg.</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Fontina%20BelGioioso%20%282/2.5%20Kg.%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-006.png" alt="Gorgonzola BelGioioso" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Gorgonzola BelGioioso</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">2/2.5 Kg.</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Gorgonzola%20BelGioioso%20%282/2.5%20Kg.%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-007.png" alt="Mozzarella BelGioioso" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Mozzarella BelGioioso</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">8/453 g</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Mozzarella%20BelGioioso%20%288/453%20g%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-008.png" alt="Mozzarella BelGioioso Fresca" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Mozzarella BelGioioso Fresca</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5"></p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Mozzarella%20BelGioioso%20Fresca" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-009.png" alt="Mozzarella Cappiello" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Mozzarella Cappiello</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">8/454 g</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Mozzarella%20Cappiello%20%288/454%20g%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-010.png" alt="Ricotta BelGioioso" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Ricotta BelGioioso</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">4/2.26 Kg.</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Ricotta%20BelGioioso%20%284/2.26%20Kg.%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-011.png" alt="Ricotta BelGioioso" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Ricotta BelGioioso</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">6/453 g</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Ricotta%20BelGioioso%20%286/453%20g%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-012.png" alt="Burrata" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Burrata</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">Pza de 6/453 g</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Burrata%20%28Pza%20de%206/453%20g%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-013.png" alt="Pepper Jack" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Pepper Jack</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">2/2.7 Kg.</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Pepper%20Jack%20%282/2.7%20Kg.%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-014.png" alt="Pepper Jack Rebanado" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Pepper Jack Rebanado</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">1 Kg.</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Pepper%20Jack%20Rebanado%20%281%20Kg.%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-015.png" alt="Queso Marbled Jack Elite" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Queso Marbled Jack Elite</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">Aprox 2.5 Kg.</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Queso%20Marbled%20Jack%20Elite%20%28Aprox%202.5%20Kg.%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-016.png" alt="Monterrey Jack" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Monterrey Jack</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">8/2.27 Kg.</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Monterrey%20Jack%20%288/2.27%20Kg.%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-017.png" alt="Romano BelGioioso USA" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Romano BelGioioso USA</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">Aprox 2 Kg.</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Romano%20BelGioioso%20USA%20%28Aprox%202%20Kg.%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-018.png" alt="Pastrami" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Pastrami</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">3.94 Kg.</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Pastrami%20%283.94%20Kg.%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-019.png" alt="Roast Beef Il Castello" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Roast Beef Il Castello</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">3.64 Kg.</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Roast%20Beef%20Il%20Castello%20%283.64%20Kg.%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-020.png" alt="Fontina Cello USA" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Fontina Cello USA</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">2.3 Kg.</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Fontina%20Cello%20USA%20%282.3%20Kg.%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-021.png" alt="Saputo USA Winter Park Barra" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Saputo USA Winter Park Barra</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">3 Kg.</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Saputo%20USA%20Winter%20Park%20Barra%20%283%20Kg.%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-022.png" alt="Pepper Jack Barra" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Pepper Jack Barra</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">3 Kg.</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Pepper%20Jack%20Barra%20%283%20Kg.%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-023.png" alt="Parmesano Kraft" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Parmesano Kraft</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">2.04 Kg.</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Parmesano%20Kraft%20%282.04%20Kg.%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-024.png" alt="Parmesano Kraft" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Parmesano Kraft</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">453 g</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Parmesano%20Kraft%20%28453%20g%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-025.png" alt="Parmesano Kraft" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Parmesano Kraft</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">227 g</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Parmesano%20Kraft%20%28227%20g%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-026.png" alt="Parmesano Kraft" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Parmesano Kraft</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">85 g</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Parmesano%20Kraft%20%2885%20g%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-027.png" alt="Philadelphia" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Philadelphia</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">24/180 g</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Philadelphia%20%2824/180%20g%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-028.png" alt="Philadelphia" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Philadelphia</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">8 Kg.</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Philadelphia%20%288%20Kg.%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-029.png" alt="Philadelphia" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Philadelphia</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">1.9 Kg.</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Philadelphia%20%281.9%20Kg.%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-030.png" alt="Philadelphia Creamy & Soft" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Philadelphia Creamy & Soft</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">8 Kg.</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Philadelphia%20Creamy%20&%20Soft%20%288%20Kg.%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-031.png" alt="Philadelphia" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Philadelphia</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">180 g</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Philadelphia%20%28180%20g%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-032.png" alt="Parmesano" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Parmesano</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">227 g</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Parmesano%20%28227%20g%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-033.png" alt="Parmesano" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Parmesano</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">2.04 Kg.</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Parmesano%20%282.04%20Kg.%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-034.png" alt="Philadelphia" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Philadelphia</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">24/140 g</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Philadelphia%20%2824/140%20g%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-035.png" alt="Philadelphia" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Philadelphia</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">190 g</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Philadelphia%20%28190%20g%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-036.png" alt="Philadelphia" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Philadelphia</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">190 g c/24 pz</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Philadelphia%20%28190%20g%20c/24%20pz%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-037.png" alt="Philadelphia Caja c/6 pz" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Philadelphia Caja c/6 pz</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">1.9 Kg.</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Philadelphia%20Caja%20c/6%20pz%20%281.9%20Kg.%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-044.png" alt="BellaVitano Clásico" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">BellaVitano Clásico</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">141 g</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20BellaVitano%20Clásico%20%28141%20g%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-045.png" alt="Mozzarella Sargento Rebanada" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Mozzarella Sargento Rebanada</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">11 reb de 226 g</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Mozzarella%20Sargento%20Rebanada%20%2811%20reb%20de%20226%20g%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-046.png" alt="Mozzarella Fresco BelGioioso" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Mozzarella Fresco BelGioioso</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">453 g</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Mozzarella%20Fresco%20BelGioioso%20%28453%20g%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-047.png" alt="Queso Suizo Americano Winter Park" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Queso Suizo Americano Winter Park</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5"></p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Queso%20Suizo%20Americano%20Winter%20Park" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-048.png" alt="Mozzarella en Perlas BelGioioso" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Mozzarella en Perlas BelGioioso</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">227 g</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Mozzarella%20en%20Perlas%20BelGioioso%20%28227%20g%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-049.png" alt="Cheddar Kirkland" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Cheddar Kirkland</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">907 g</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Cheddar%20Kirkland%20%28907%20g%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-050.png" alt="Singles Kraft" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Singles Kraft</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">864 g c/48 reb</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Singles%20Kraft%20%28864%20g%20c/48%20reb%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-051.png" alt="Provolone Rebanado Sargento" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Provolone Rebanado Sargento</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">226 g</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Provolone%20Rebanado%20Sargento%20%28226%20g%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-052.png" alt="BellaVitano Gold" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">BellaVitano Gold</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">150 g</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20BellaVitano%20Gold%20%28150%20g%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-053.png" alt="BellaVitano Merlot" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">BellaVitano Merlot</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">150 g</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20BellaVitano%20Merlot%20%28150%20g%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-054.png" alt="Gouda USA Bafar" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Gouda USA Bafar</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">Caja c/6 pz de 3 Kg. c/u</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Gouda%20USA%20Bafar%20%28Caja%20c/6%20pz%20de%203%20Kg.%20c/u%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-055.png" alt="Cheddar Hillmar USA" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Cheddar Hillmar USA</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5"></p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Cheddar%20Hillmar%20USA" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-056.png" alt="Mozzarella Fenner Barra" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Mozzarella Fenner Barra</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">8/2.7 Kg.</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Mozzarella%20Fenner%20Barra%20%288/2.7%20Kg.%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-057.png" alt="Rayado Cubicado Leprino" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Rayado Cubicado Leprino</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">6.8 Kg.</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Rayado%20Cubicado%20Leprino%20%286.8%20Kg.%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-058.png" alt="Mozzarella Stella Rallada" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Mozzarella Stella Rallada</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">Bolsa de 2.26 Kg.</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Mozzarella%20Stella%20Rallada%20%28Bolsa%20de%202.26%20Kg.%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-059.png" alt="Mozzarella Stella Barra" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Mozzarella Stella Barra</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">Caja c/6 pz</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Mozzarella%20Stella%20Barra%20%28Caja%20c/6%20pz%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="mb-16 md:mb-20">
+            <div class="flex items-center gap-4 mb-8">
+                <h2 class="text-2xl md:text-3xl font-serif text-wine-dark">American Cold Cuts</h2>
+                <div class="flex-grow h-px bg-gold/40"></div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-038.png" alt="Jamón Pop Americano Blanco" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Jamón Pop Americano Blanco</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">3.9 Kg.</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Jamón%20Pop%20Americano%20Blanco%20%283.9%20Kg.%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-039.png" alt="Pepperoni" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Pepperoni</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">1 Kg.</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Pepperoni%20%281%20Kg.%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-040.png" alt="Tocino Kirkland Azul" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Tocino Kirkland Azul</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">454 g</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Tocino%20Kirkland%20Azul%20%28454%20g%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-041.png" alt="Pastrami de Pavo" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Pastrami de Pavo</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5"></p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Pastrami%20de%20Pavo" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-042.png" alt="Pastrami de Res a las Hierbas Finas" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Pastrami de Res a las Hierbas Finas</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">1 Kg.</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Pastrami%20de%20Res%20a%20las%20Hierbas%20Finas%20%281%20Kg.%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-043.png" alt="Tocineta On Top" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Tocineta On Top</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">453 g</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Tocineta%20On%20Top%20%28453%20g%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-060.png" alt="Peperonni Hillshire" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Peperonni Hillshire</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">2/5.34 Kg.</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Peperonni%20Hillshire%20%282/5.34%20Kg.%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-061.png" alt="Prosciutto Volpi" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Prosciutto Volpi</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">Pza.</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Prosciutto%20Volpi%20%28Pza.%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-062.png" alt="Pepperoni Hormel" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Pepperoni Hormel</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">11.54 Kg.</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Pepperoni%20Hormel%20%2811.54%20Kg.%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-063.png" alt="Tyson Tocino Irregular" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Tyson Tocino Irregular</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">453 g</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Tyson%20Tocino%20Irregular%20%28453%20g%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-064.png" alt="Dedos de Queso Empanizados Rich" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Dedos de Queso Empanizados Rich</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5"></p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Dedos%20de%20Queso%20Empanizados%20Rich" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-065.png" alt="Pastrami" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Pastrami</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">900 g</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Pastrami%20%28900%20g%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-066.png" alt="Tocino Oscar Mayer Pte" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Tocino Oscar Mayer Pte</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">340 g</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Tocino%20Oscar%20Mayer%20Pte%20%28340%20g%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-067.png" alt="Tocino Layout" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Tocino Layout</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">6.81 Kg.</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Tocino%20Layout%20%286.81%20Kg.%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-068.png" alt="Peperoni F.S." loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Peperoni F.S.</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">2.27 Kg.</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Peperoni%20F.S.%20%282.27%20Kg.%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-069.png" alt="Pepperoni Caja c/2 Bolsas" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Pepperoni Caja c/2 Bolsas</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">Aprox 5.6 Kg.</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Pepperoni%20Caja%20c/2%20Bolsas%20%28Aprox%205.6%20Kg.%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-070.png" alt="Peperonni Moneda" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Peperonni Moneda</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">2/5.34 Kg.</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Peperonni%20Moneda%20%282/5.34%20Kg.%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-071.png" alt="Salchicha Hot Dog" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Salchicha Hot Dog</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">3 Kg.</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Salchicha%20Hot%20Dog%20%283%20Kg.%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-072.png" alt="Jamón Americano" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Jamón Americano</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5"></p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Jamón%20Americano" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-073.png" alt="Jamón Americano de Pavo Azul" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Jamón Americano de Pavo Azul</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">1 Kg. Reb A.V.</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Jamón%20Americano%20de%20Pavo%20Azul%20%281%20Kg.%20Reb%20A.V.%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-074.png" alt="Jamón Americano Rojo" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Jamón Americano Rojo</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">5 Kg.</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Jamón%20Americano%20Rojo%20%285%20Kg.%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-075.png" alt="Jamón Virginia" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Jamón Virginia</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5"></p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Jamón%20Virginia" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-076.png" alt="Pepperoni" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Pepperoni</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5"></p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Pepperoni" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-077.png" alt="Jamón Virginia de Pavo FUD" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Jamón Virginia de Pavo FUD</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">Pza 3.95 Kg.</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Jamón%20Virginia%20de%20Pavo%20FUD%20%28Pza%203.95%20Kg.%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-078.png" alt="Jamón Virginia San Antonio" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Jamón Virginia San Antonio</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">Pza 3.8 Kg.</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Jamón%20Virginia%20San%20Antonio%20%28Pza%203.8%20Kg.%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/estados-unidos/us-079.png" alt="Pepperoni Galicia" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Pepperoni Galicia</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">1 Kg.</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Pepperoni%20Galicia%20%281%20Kg.%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-wine-dark text-cream border border-wine-light/30 mx-4 md:mx-8 mb-6 mt-auto rounded-[2.5rem] shadow-2xl overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 py-10 flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">
+            <div class="flex items-center gap-4">
+                <img alt="Noanto Logo" class="h-12 w-12 rounded-full border-2 border-gold/50" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjk7tStclocpalN8Eq01UsmdR04rzr39VMTD05s8qV0SZSRTEoGpwtgccQeUyCVDPcLAAeVoPaVq1yEAnvjYcc2QSXMMqUjqtrwke7bYy8RVUgSKx3YkmraiC5T23s2Kwm_WQa_-NhQKGTZcQsTMD02UZ7inIcIsiSGu3zQLIqsJKbftFwXbGETW9K56J-t6Am8DwiPHaI80xNDd2YJDv09LiOJDiDnumV-TKGB29sdksSCx6HL-NglTBVpLELCjOAkQ">
+                <div>
+                    <span class="block text-2xl font-serif font-bold text-white tracking-wide">Noanto<span class="text-gold">.</span></span>
+                    <span class="text-[11px] text-cream/70 uppercase tracking-[0.2em] font-medium mt-1 block">Distribuidora de Quesos</span>
+                </div>
+            </div>
+            <div>
+                <p class="text-sm font-light text-cream/80">&copy; 2026 Noanto Distribuidora. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a class="fixed bottom-6 right-6 md:bottom-8 md:right-8 bg-[#25D366] text-white w-14 h-14 md:w-16 md:h-16 rounded-full flex items-center justify-center shadow-[0_8px_16px_rgba(37,211,102,0.3)] hover:scale-110 hover:shadow-[0_10px_20px_rgba(37,211,102,0.4)] transition-all duration-300 z-50 animate-float" href="https://wa.me/5581333256">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 16 16" class="w-7 h-7 md:w-8 md:h-8">
+            <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+        </svg>
+    </a>
+</body>
+</html>

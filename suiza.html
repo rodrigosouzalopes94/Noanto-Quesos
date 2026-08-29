@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="es-MX">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Suiza - Noanto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="noanto.js"></script>
+    <link rel="stylesheet" href="noanto.css">
+</head>
+<body class="bg-cream text-charcoal font-sans custom-scrollbar selection:bg-gold selection:text-white flex flex-col min-h-screen">
+
+    <nav class="glass-nav flex justify-between items-center w-full px-5 md:px-16 py-4 fixed top-0 z-50 transition-all duration-300">
+        <a href="index.html" class="flex items-center gap-3">
+            <img alt="Noanto Logo" class="h-10 w-10 rounded-full object-cover shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAI_N6ZMugwekVh2r6HYrCVbYLMzrmfzIwJkwA2DaAR4ZbHtyHa1ltw0f3YaGwG7IJAb0tlhFCYivZh3KwtQ8gzvqcvRzDbeQRey0TOHzn3npzRAuRCTvCuzAr85aBffbum3GiqJxRlFsRvuwcX8-fbJGPVno_aSXotl4ISGCFQaOuCkb6GcTtHKJvf_BmiD6_KUSeoWqKisMCuKLdDybEd9CliT2MLeoUVfBrqQRd0Hydvs7YLX_SMwVXPfSqRmV3igA">
+            <span class="text-xl font-serif font-bold text-wine-dark tracking-tight">Noanto<span class="text-gold">.</span></span>
+        </a>
+        <div class="hidden md:flex gap-8 items-center">
+            <a class="text-sm font-medium text-charcoal/70 hover:text-wine transition-colors" href="index.html">Inicio</a>
+            <div class="relative group/paises">
+                <button type="button" class="flex items-center gap-1.5 text-sm font-medium text-charcoal/70 hover:text-wine transition-colors py-2">
+                    Países
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" class="transition-transform duration-300 group-hover/paises:rotate-180">
+                        <path d="M6 9l6 6 6-6"/>
+                    </svg>
+                </button>
+                <div class="absolute top-full left-1/2 -translate-x-1/2 pt-3 opacity-0 invisible translate-y-1 group-hover/paises:opacity-100 group-hover/paises:visible group-hover/paises:translate-y-0 focus-within:opacity-100 focus-within:visible focus-within:translate-y-0 transition-all duration-200 z-50">
+                    <div class="bg-white rounded-2xl shadow-[0_20px_50px_rgba(42,42,42,0.15)] border border-cream-dark p-3 grid grid-cols-2 gap-1 w-[380px]">
+                    <a href="francia.html" class="flex items-center gap-2.5 px-4 py-2.5 rounded-xl hover:bg-wine/5 hover:text-wine transition-colors text-sm text-charcoal/80"><span class="text-base leading-none">🇫🇷</span>Francia</a>
+                    <a href="italia.html" class="flex items-center gap-2.5 px-4 py-2.5 rounded-xl hover:bg-wine/5 hover:text-wine transition-colors text-sm text-charcoal/80"><span class="text-base leading-none">🇮🇹</span>Italia</a>
+                    <a href="suiza.html" class="flex items-center gap-2.5 px-4 py-2.5 rounded-xl hover:bg-wine/5 hover:text-wine transition-colors text-sm text-charcoal/80"><span class="text-base leading-none">🇨🇭</span>Suiza</a>
+                    <a href="holanda.html" class="flex items-center gap-2.5 px-4 py-2.5 rounded-xl hover:bg-wine/5 hover:text-wine transition-colors text-sm text-charcoal/80"><span class="text-base leading-none">🇳🇱</span>Holanda</a>
+                    <a href="espana.html" class="flex items-center gap-2.5 px-4 py-2.5 rounded-xl hover:bg-wine/5 hover:text-wine transition-colors text-sm text-charcoal/80"><span class="text-base leading-none">🇪🇸</span>España</a>
+                    <a href="reino-unido.html" class="flex items-center gap-2.5 px-4 py-2.5 rounded-xl hover:bg-wine/5 hover:text-wine transition-colors text-sm text-charcoal/80"><span class="text-base leading-none">🇬🇧</span>Reino Unido</a>
+                    <a href="estados-unidos.html" class="flex items-center gap-2.5 px-4 py-2.5 rounded-xl hover:bg-wine/5 hover:text-wine transition-colors text-sm text-charcoal/80"><span class="text-base leading-none">🇺🇸</span>Estados Unidos</a>
+                    <a href="dinamarca.html" class="flex items-center gap-2.5 px-4 py-2.5 rounded-xl hover:bg-wine/5 hover:text-wine transition-colors text-sm text-charcoal/80"><span class="text-base leading-none">🇩🇰</span>Dinamarca</a>
+                    <a href="nueva-zelanda.html" class="flex items-center gap-2.5 px-4 py-2.5 rounded-xl hover:bg-wine/5 hover:text-wine transition-colors text-sm text-charcoal/80"><span class="text-base leading-none">🇳🇿</span>Nueva Zelanda</a>
+                    <a href="uruguay.html" class="flex items-center gap-2.5 px-4 py-2.5 rounded-xl hover:bg-wine/5 hover:text-wine transition-colors text-sm text-charcoal/80"><span class="text-base leading-none">🇺🇾</span>Uruguay</a>
+                    <a href="mexico.html" class="flex items-center gap-2.5 px-4 py-2.5 rounded-xl hover:bg-wine/5 hover:text-wine transition-colors text-sm text-charcoal/80"><span class="text-base leading-none">🇲🇽</span>México</a>
+                    </div>
+                </div>
+            </div>
+            <a class="text-sm font-medium text-charcoal/70 hover:text-wine transition-colors" href="index.html#catalog">Catálogo</a>
+        </div>
+        <a class="bg-wine text-white px-5 py-2.5 text-sm font-medium rounded-full flex items-center gap-2 hover:bg-wine-light hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300" href="https://wa.me/5581333256">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+            </svg>
+            <span class="hidden sm:inline">Cotizar</span>
+        </a>
+    </nav>
+
+    <main class="flex-grow pt-32 pb-20 max-w-7xl mx-auto px-5 md:px-16 w-full">
+        <div class="flex flex-col md:flex-row gap-8 items-end mb-16 animate-fade-up">
+            <div class="w-full md:w-1/3 aspect-[4/3] rounded-[2rem] overflow-hidden shadow-lg relative group">
+                <img src="images/suiza-hero.jpg" alt="Productos de Suiza" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+            </div>
+            <div class="w-full md:w-2/3">
+                <span class="text-wine text-xs uppercase tracking-widest font-bold bg-wine/10 px-4 py-1.5 rounded-full">🇨🇭 Catálogo por país</span>
+                <h1 class="text-4xl md:text-5xl font-serif text-wine-dark mt-4 mb-3">Suiza</h1>
+                <p class="text-charcoal/70 font-light max-w-xl">Gruyère, Emmental y fondue: la tradición alpina más pura, en piezas y presentaciones para todo tipo de negocio.</p>
+            </div>
+        </div>
+
+        <section class="mb-16 md:mb-20">
+            <div class="flex items-center gap-4 mb-8">
+                <h2 class="text-2xl md:text-3xl font-serif text-wine-dark">Productos Suizos</h2>
+                <div class="flex-grow h-px bg-gold/40"></div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/suiza/sz-001.png" alt="Gruyère" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Gruyère</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">1 kg / 50 ci</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Gruyère%20%281%20kg%20/%2050%20ci%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/suiza/sz-002.png" alt="Gruyère Pieza" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Gruyère Pieza</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">35 kg</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Gruyère%20Pieza%20%2835%20kg%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/suiza/sz-003.png" alt="Gruyère Cuña" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Gruyère Cuña</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">200 gr</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Gruyère%20Cuña%20%28200%20gr%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/suiza/sz-004.png" alt="Gruyère Suizo" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Gruyère Suizo</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">300 gr</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Gruyère%20Suizo%20%28300%20gr%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/suiza/sz-005.png" alt="Gruyère Vikingo Dorado" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Gruyère Vikingo Dorado</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">3 kg</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Gruyère%20Vikingo%20Dorado%20%283%20kg%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/suiza/sz-006.png" alt="Fondue Tigre" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Fondue Tigre</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">12 / 400 gr</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Fondue%20Tigre%20%2812%20/%20400%20gr%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="mb-16 md:mb-20">
+            <div class="flex items-center gap-4 mb-8">
+                <h2 class="text-2xl md:text-3xl font-serif text-wine-dark">Quesos Suizos</h2>
+                <div class="flex-grow h-px bg-gold/40"></div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/suiza/sz-007.png" alt="Emmental Suizo Winter" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Emmental Suizo Winter</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5"></p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Emmental%20Suizo%20Winter" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/suiza/sz-008.png" alt="Suizo/Gruyère Rebanado" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Suizo/Gruyère Rebanado</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5"></p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Suizo/Gruyère%20Rebanado" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="mb-16 md:mb-20">
+            <div class="flex items-center gap-4 mb-8">
+                <h2 class="text-2xl md:text-3xl font-serif text-wine-dark">Cremas y Otros Lácteos</h2>
+                <div class="flex-grow h-px bg-gold/40"></div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/suiza/sz-009.png" alt="Crema Para Batir Nestlé" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Crema Para Batir Nestlé</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5"></p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Crema%20Para%20Batir%20Nestlé" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-wine-dark text-cream border border-wine-light/30 mx-4 md:mx-8 mb-6 mt-auto rounded-[2.5rem] shadow-2xl overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 py-10 flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">
+            <div class="flex items-center gap-4">
+                <img alt="Noanto Logo" class="h-12 w-12 rounded-full border-2 border-gold/50" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjk7tStclocpalN8Eq01UsmdR04rzr39VMTD05s8qV0SZSRTEoGpwtgccQeUyCVDPcLAAeVoPaVq1yEAnvjYcc2QSXMMqUjqtrwke7bYy8RVUgSKx3YkmraiC5T23s2Kwm_WQa_-NhQKGTZcQsTMD02UZ7inIcIsiSGu3zQLIqsJKbftFwXbGETW9K56J-t6Am8DwiPHaI80xNDd2YJDv09LiOJDiDnumV-TKGB29sdksSCx6HL-NglTBVpLELCjOAkQ">
+                <div>
+                    <span class="block text-2xl font-serif font-bold text-white tracking-wide">Noanto<span class="text-gold">.</span></span>
+                    <span class="text-[11px] text-cream/70 uppercase tracking-[0.2em] font-medium mt-1 block">Distribuidora de Quesos</span>
+                </div>
+            </div>
+            <div>
+                <p class="text-sm font-light text-cream/80">&copy; 2026 Noanto Distribuidora. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a class="fixed bottom-6 right-6 md:bottom-8 md:right-8 bg-[#25D366] text-white w-14 h-14 md:w-16 md:h-16 rounded-full flex items-center justify-center shadow-[0_8px_16px_rgba(37,211,102,0.3)] hover:scale-110 hover:shadow-[0_10px_20px_rgba(37,211,102,0.4)] transition-all duration-300 z-50 animate-float" href="https://wa.me/5581333256">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 16 16" class="w-7 h-7 md:w-8 md:h-8">
+            <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+        </svg>
+    </a>
+</body>
+</html>

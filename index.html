@@ -4,38 +4,59 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Noanto - Distribuidora de Quesos Premium</title>
-    
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-    
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    
+
     <!-- Configurações Locais -->
     <script src="noanto.js"></script>
     <link rel="stylesheet" href="noanto.css">
 </head>
 <body class="bg-cream text-charcoal font-sans custom-scrollbar selection:bg-gold selection:text-white flex flex-col min-h-screen">
-    
+
     <!-- Top Navigation Bar (Glassmorphism) -->
     <nav class="glass-nav flex justify-between items-center w-full px-5 md:px-16 py-4 fixed top-0 z-50 transition-all duration-300">
-        <div class="flex items-center gap-3">
+        <a href="index.html" class="flex items-center gap-3">
             <img alt="Noanto Logo" class="h-10 w-10 rounded-full object-cover shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAI_N6ZMugwekVh2r6HYrCVbYLMzrmfzIwJkwA2DaAR4ZbHtyHa1ltw0f3YaGwG7IJAb0tlhFCYivZh3KwtQ8gzvqcvRzDbeQRey0TOHzn3npzRAuRCTvCuzAr85aBffbum3GiqJxRlFsRvuwcX8-fbJGPVno_aSXotl4ISGCFQaOuCkb6GcTtHKJvf_BmiD6_KUSeoWqKisMCuKLdDybEd9CliT2MLeoUVfBrqQRd0Hydvs7YLX_SMwVXPfSqRmV3igA">
             <span class="text-xl font-serif font-bold text-wine-dark tracking-tight">Noanto<span class="text-gold">.</span></span>
-        </div>
-        <div class="hidden md:flex gap-10 items-center">
-            <a class="text-sm font-medium text-wine border-b-2 border-gold pb-1" href="#">Inicio</a>
-            <a class="text-sm font-medium text-charcoal/70 hover:text-wine transition-colors" href="#catalog">Catálogo</a>
-            <a class="text-sm font-medium text-charcoal/70 hover:text-wine transition-colors" href="#">Nosotros</a>
-            <a class="text-sm font-medium text-charcoal/70 hover:text-wine transition-colors" href="#">Mayoreo</a>
+        </a>
+        <div class="hidden md:flex gap-8 items-center">
+            <a class="text-sm font-medium text-wine border-b-2 border-gold pb-1" href="index.html">Inicio</a>
+            <div class="relative group/paises">
+                <button type="button" class="flex items-center gap-1.5 text-sm font-medium text-charcoal/70 hover:text-wine transition-colors py-2">
+                    Países
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" class="transition-transform duration-300 group-hover/paises:rotate-180">
+                        <path d="M6 9l6 6 6-6"/>
+                    </svg>
+                </button>
+                <div class="absolute top-full left-1/2 -translate-x-1/2 pt-3 opacity-0 invisible translate-y-1 group-hover/paises:opacity-100 group-hover/paises:visible group-hover/paises:translate-y-0 focus-within:opacity-100 focus-within:visible focus-within:translate-y-0 transition-all duration-200 z-50">
+                    <div class="bg-white rounded-2xl shadow-[0_20px_50px_rgba(42,42,42,0.15)] border border-cream-dark p-3 grid grid-cols-2 gap-1 w-[380px]">
+                    <a href="francia.html" class="flex items-center gap-2.5 px-4 py-2.5 rounded-xl hover:bg-wine/5 hover:text-wine transition-colors text-sm text-charcoal/80"><span class="text-base leading-none">🇫🇷</span>Francia</a>
+                    <a href="italia.html" class="flex items-center gap-2.5 px-4 py-2.5 rounded-xl hover:bg-wine/5 hover:text-wine transition-colors text-sm text-charcoal/80"><span class="text-base leading-none">🇮🇹</span>Italia</a>
+                    <a href="suiza.html" class="flex items-center gap-2.5 px-4 py-2.5 rounded-xl hover:bg-wine/5 hover:text-wine transition-colors text-sm text-charcoal/80"><span class="text-base leading-none">🇨🇭</span>Suiza</a>
+                    <a href="holanda.html" class="flex items-center gap-2.5 px-4 py-2.5 rounded-xl hover:bg-wine/5 hover:text-wine transition-colors text-sm text-charcoal/80"><span class="text-base leading-none">🇳🇱</span>Holanda</a>
+                    <a href="espana.html" class="flex items-center gap-2.5 px-4 py-2.5 rounded-xl hover:bg-wine/5 hover:text-wine transition-colors text-sm text-charcoal/80"><span class="text-base leading-none">🇪🇸</span>España</a>
+                    <a href="reino-unido.html" class="flex items-center gap-2.5 px-4 py-2.5 rounded-xl hover:bg-wine/5 hover:text-wine transition-colors text-sm text-charcoal/80"><span class="text-base leading-none">🇬🇧</span>Reino Unido</a>
+                    <a href="estados-unidos.html" class="flex items-center gap-2.5 px-4 py-2.5 rounded-xl hover:bg-wine/5 hover:text-wine transition-colors text-sm text-charcoal/80"><span class="text-base leading-none">🇺🇸</span>Estados Unidos</a>
+                    <a href="dinamarca.html" class="flex items-center gap-2.5 px-4 py-2.5 rounded-xl hover:bg-wine/5 hover:text-wine transition-colors text-sm text-charcoal/80"><span class="text-base leading-none">🇩🇰</span>Dinamarca</a>
+                    <a href="nueva-zelanda.html" class="flex items-center gap-2.5 px-4 py-2.5 rounded-xl hover:bg-wine/5 hover:text-wine transition-colors text-sm text-charcoal/80"><span class="text-base leading-none">🇳🇿</span>Nueva Zelanda</a>
+                    <a href="uruguay.html" class="flex items-center gap-2.5 px-4 py-2.5 rounded-xl hover:bg-wine/5 hover:text-wine transition-colors text-sm text-charcoal/80"><span class="text-base leading-none">🇺🇾</span>Uruguay</a>
+                    <a href="mexico.html" class="flex items-center gap-2.5 px-4 py-2.5 rounded-xl hover:bg-wine/5 hover:text-wine transition-colors text-sm text-charcoal/80"><span class="text-base leading-none">🇲🇽</span>México</a>
+                    </div>
+                </div>
+            </div>
+            <a class="text-sm font-medium text-charcoal/70 hover:text-wine transition-colors" href="index.html#catalog">Catálogo</a>
         </div>
         <a class="bg-wine text-white px-5 py-2.5 text-sm font-medium rounded-full flex items-center gap-2 hover:bg-wine-light hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300" href="https://wa.me/5581333256">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
                 <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
             </svg>
-            <span class="hidden sm:inline">Hablemos</span>
+            <span class="hidden sm:inline">Cotizar</span>
         </a>
     </nav>
 
@@ -80,6 +101,171 @@
             </div>
         </section>
 
+        <!-- Explora por País -->
+        <section class="max-w-7xl mx-auto px-5 md:px-16 py-16 md:py-20">
+            <div class="text-center max-w-xl mx-auto mb-12 md:mb-16 animate-fade-up">
+                <h2 class="text-3xl md:text-5xl font-serif text-wine-dark mb-4">Explora por País</h2>
+                <div class="w-16 h-1 bg-gold mx-auto mb-6"></div>
+                <p class="text-sm md:text-lg text-charcoal/70 font-light">Cada región aporta su propia tradición quesera. Descubre el catálogo completo de cada origen.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+                <a href="francia.html" class="bg-white rounded-[2.5rem] overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 group border border-cream-dark flex flex-col">
+                    <div class="aspect-[16/11] w-full overflow-hidden relative">
+                        <img alt="Quesos de Francia" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="images/francia-hero.jpg">
+                        <div class="absolute inset-0 bg-wine/0 group-hover:bg-wine/10 transition-colors duration-300"></div>
+                        <span class="absolute top-4 left-4 text-xs uppercase tracking-widest font-bold bg-white/90 text-wine px-3.5 py-1.5 rounded-full">🇫🇷 Francia</span>
+                    </div>
+                    <div class="p-6 flex flex-col gap-2 flex-grow">
+                        <p class="text-charcoal/70 font-light text-sm mb-2 line-clamp-2">El templo del terroir y la diversidad quesera. Selección de piezas que encarnan la elegancia histórica de la alta mesa francesa: camembert, brie, comté, roquefort y mucho más.</p>
+                        <div class="mt-auto pt-4 border-t border-charcoal/10">
+                            <span class="block w-full text-center border-2 border-wine text-wine py-2.5 text-xs font-medium rounded-full group-hover:bg-wine group-hover:text-white transition-all duration-300">Ver Catálogo</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="italia.html" class="bg-white rounded-[2.5rem] overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 group border border-cream-dark flex flex-col">
+                    <div class="aspect-[16/11] w-full overflow-hidden relative">
+                        <img alt="Quesos de Italia" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="images/italia-hero.jpg">
+                        <div class="absolute inset-0 bg-wine/0 group-hover:bg-wine/10 transition-colors duration-300"></div>
+                        <span class="absolute top-4 left-4 text-xs uppercase tracking-widest font-bold bg-white/90 text-wine px-3.5 py-1.5 rounded-full">🇮🇹 Italia</span>
+                    </div>
+                    <div class="p-6 flex flex-col gap-2 flex-grow">
+                        <p class="text-charcoal/70 font-light text-sm mb-2 line-clamp-2">Mozzarella, burrata, mascarpone y los grandes quesos de mesa italianos, junto a una selecta charcutería de prosciutto, salami y mortadela para tu negocio.</p>
+                        <div class="mt-auto pt-4 border-t border-charcoal/10">
+                            <span class="block w-full text-center border-2 border-wine text-wine py-2.5 text-xs font-medium rounded-full group-hover:bg-wine group-hover:text-white transition-all duration-300">Ver Catálogo</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="suiza.html" class="bg-white rounded-[2.5rem] overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 group border border-cream-dark flex flex-col">
+                    <div class="aspect-[16/11] w-full overflow-hidden relative">
+                        <img alt="Quesos de Suiza" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="images/suiza-hero.jpg">
+                        <div class="absolute inset-0 bg-wine/0 group-hover:bg-wine/10 transition-colors duration-300"></div>
+                        <span class="absolute top-4 left-4 text-xs uppercase tracking-widest font-bold bg-white/90 text-wine px-3.5 py-1.5 rounded-full">🇨🇭 Suiza</span>
+                    </div>
+                    <div class="p-6 flex flex-col gap-2 flex-grow">
+                        <p class="text-charcoal/70 font-light text-sm mb-2 line-clamp-2">Gruyère, Emmental y fondue: la tradición alpina más pura, en piezas y presentaciones para todo tipo de negocio.</p>
+                        <div class="mt-auto pt-4 border-t border-charcoal/10">
+                            <span class="block w-full text-center border-2 border-wine text-wine py-2.5 text-xs font-medium rounded-full group-hover:bg-wine group-hover:text-white transition-all duration-300">Ver Catálogo</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="holanda.html" class="bg-white rounded-[2.5rem] overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 group border border-cream-dark flex flex-col">
+                    <div class="aspect-[16/11] w-full overflow-hidden relative">
+                        <img alt="Quesos de Holanda" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="images/holanda-hero.jpg">
+                        <div class="absolute inset-0 bg-wine/0 group-hover:bg-wine/10 transition-colors duration-300"></div>
+                        <span class="absolute top-4 left-4 text-xs uppercase tracking-widest font-bold bg-white/90 text-wine px-3.5 py-1.5 rounded-full">🇳🇱 Holanda</span>
+                    </div>
+                    <div class="p-6 flex flex-col gap-2 flex-grow">
+                        <p class="text-charcoal/70 font-light text-sm mb-2 line-clamp-2">Gouda, Edam y Maasdam: el sello inconfundible del queso holandés, además de una selecta charcutería de importación.</p>
+                        <div class="mt-auto pt-4 border-t border-charcoal/10">
+                            <span class="block w-full text-center border-2 border-wine text-wine py-2.5 text-xs font-medium rounded-full group-hover:bg-wine group-hover:text-white transition-all duration-300">Ver Catálogo</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="espana.html" class="bg-white rounded-[2.5rem] overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 group border border-cream-dark flex flex-col">
+                    <div class="aspect-[16/11] w-full overflow-hidden relative">
+                        <img alt="Quesos de España" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="images/espana-hero.jpg">
+                        <div class="absolute inset-0 bg-wine/0 group-hover:bg-wine/10 transition-colors duration-300"></div>
+                        <span class="absolute top-4 left-4 text-xs uppercase tracking-widest font-bold bg-white/90 text-wine px-3.5 py-1.5 rounded-full">🇪🇸 España</span>
+                    </div>
+                    <div class="p-6 flex flex-col gap-2 flex-grow">
+                        <p class="text-charcoal/70 font-light text-sm mb-2 line-clamp-2">Manchego, Idiazábal, jamón ibérico y serrano: el sabor auténtico de la Península Ibérica para tu carta.</p>
+                        <div class="mt-auto pt-4 border-t border-charcoal/10">
+                            <span class="block w-full text-center border-2 border-wine text-wine py-2.5 text-xs font-medium rounded-full group-hover:bg-wine group-hover:text-white transition-all duration-300">Ver Catálogo</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="reino-unido.html" class="bg-white rounded-[2.5rem] overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 group border border-cream-dark flex flex-col">
+                    <div class="aspect-[16/11] w-full overflow-hidden relative">
+                        <img alt="Quesos de Reino Unido" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="images/reino-unido-hero.jpg">
+                        <div class="absolute inset-0 bg-wine/0 group-hover:bg-wine/10 transition-colors duration-300"></div>
+                        <span class="absolute top-4 left-4 text-xs uppercase tracking-widest font-bold bg-white/90 text-wine px-3.5 py-1.5 rounded-full">🇬🇧 Reino Unido</span>
+                    </div>
+                    <div class="p-6 flex flex-col gap-2 flex-grow">
+                        <p class="text-charcoal/70 font-light text-sm mb-2 line-clamp-2">Cheddar inglés en todas sus presentaciones, de la pieza entera al rallado listo para usar.</p>
+                        <div class="mt-auto pt-4 border-t border-charcoal/10">
+                            <span class="block w-full text-center border-2 border-wine text-wine py-2.5 text-xs font-medium rounded-full group-hover:bg-wine group-hover:text-white transition-all duration-300">Ver Catálogo</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="estados-unidos.html" class="bg-white rounded-[2.5rem] overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 group border border-cream-dark flex flex-col">
+                    <div class="aspect-[16/11] w-full overflow-hidden relative">
+                        <img alt="Quesos de Estados Unidos" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="images/estados-unidos-hero.jpg">
+                        <div class="absolute inset-0 bg-wine/0 group-hover:bg-wine/10 transition-colors duration-300"></div>
+                        <span class="absolute top-4 left-4 text-xs uppercase tracking-widest font-bold bg-white/90 text-wine px-3.5 py-1.5 rounded-full">🇺🇸 Estados Unidos</span>
+                    </div>
+                    <div class="p-6 flex flex-col gap-2 flex-grow">
+                        <p class="text-charcoal/70 font-light text-sm mb-2 line-clamp-2">American cheese y cold cuts: los clásicos imprescindibles para tu barra, tu cocina y tu deli.</p>
+                        <div class="mt-auto pt-4 border-t border-charcoal/10">
+                            <span class="block w-full text-center border-2 border-wine text-wine py-2.5 text-xs font-medium rounded-full group-hover:bg-wine group-hover:text-white transition-all duration-300">Ver Catálogo</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="dinamarca.html" class="bg-white rounded-[2.5rem] overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 group border border-cream-dark flex flex-col">
+                    <div class="aspect-[16/11] w-full overflow-hidden relative">
+                        <img alt="Quesos de Dinamarca" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="images/dinamarca-hero.jpg">
+                        <div class="absolute inset-0 bg-wine/0 group-hover:bg-wine/10 transition-colors duration-300"></div>
+                        <span class="absolute top-4 left-4 text-xs uppercase tracking-widest font-bold bg-white/90 text-wine px-3.5 py-1.5 rounded-full">🇩🇰 Dinamarca</span>
+                    </div>
+                    <div class="p-6 flex flex-col gap-2 flex-grow">
+                        <p class="text-charcoal/70 font-light text-sm mb-2 line-clamp-2">Havarti y los sabores daneses que aportan versatilidad y frescura a cualquier menú.</p>
+                        <div class="mt-auto pt-4 border-t border-charcoal/10">
+                            <span class="block w-full text-center border-2 border-wine text-wine py-2.5 text-xs font-medium rounded-full group-hover:bg-wine group-hover:text-white transition-all duration-300">Ver Catálogo</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="nueva-zelanda.html" class="bg-white rounded-[2.5rem] overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 group border border-cream-dark flex flex-col">
+                    <div class="aspect-[16/11] w-full overflow-hidden relative">
+                        <img alt="Quesos de Nueva Zelanda" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="images/nueva-zelanda-hero.jpg">
+                        <div class="absolute inset-0 bg-wine/0 group-hover:bg-wine/10 transition-colors duration-300"></div>
+                        <span class="absolute top-4 left-4 text-xs uppercase tracking-widest font-bold bg-white/90 text-wine px-3.5 py-1.5 rounded-full">🇳🇿 Nueva Zelanda</span>
+                    </div>
+                    <div class="p-6 flex flex-col gap-2 flex-grow">
+                        <p class="text-charcoal/70 font-light text-sm mb-2 line-clamp-2">Lácteos de pastura neozelandeses: pureza, frescura y una calidad consistente en cada entrega.</p>
+                        <div class="mt-auto pt-4 border-t border-charcoal/10">
+                            <span class="block w-full text-center border-2 border-wine text-wine py-2.5 text-xs font-medium rounded-full group-hover:bg-wine group-hover:text-white transition-all duration-300">Ver Catálogo</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="uruguay.html" class="bg-white rounded-[2.5rem] overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 group border border-cream-dark flex flex-col">
+                    <div class="aspect-[16/11] w-full overflow-hidden relative">
+                        <img alt="Quesos de Uruguay" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="images/uruguay-hero.jpg">
+                        <div class="absolute inset-0 bg-wine/0 group-hover:bg-wine/10 transition-colors duration-300"></div>
+                        <span class="absolute top-4 left-4 text-xs uppercase tracking-widest font-bold bg-white/90 text-wine px-3.5 py-1.5 rounded-full">🇺🇾 Uruguay</span>
+                    </div>
+                    <div class="p-6 flex flex-col gap-2 flex-grow">
+                        <p class="text-charcoal/70 font-light text-sm mb-2 line-clamp-2">Quesos uruguayos de tradición familiar: Colonia, Parrillero, Mozzarella y mucho más.</p>
+                        <div class="mt-auto pt-4 border-t border-charcoal/10">
+                            <span class="block w-full text-center border-2 border-wine text-wine py-2.5 text-xs font-medium rounded-full group-hover:bg-wine group-hover:text-white transition-all duration-300">Ver Catálogo</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="mexico.html" class="bg-white rounded-[2.5rem] overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 group border border-cream-dark flex flex-col">
+                    <div class="aspect-[16/11] w-full overflow-hidden relative">
+                        <img alt="Quesos de México" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="images/mexico-hero.jpg">
+                        <div class="absolute inset-0 bg-wine/0 group-hover:bg-wine/10 transition-colors duration-300"></div>
+                        <span class="absolute top-4 left-4 text-xs uppercase tracking-widest font-bold bg-white/90 text-wine px-3.5 py-1.5 rounded-full">🇲🇽 México</span>
+                    </div>
+                    <div class="p-6 flex flex-col gap-2 flex-grow">
+                        <p class="text-charcoal/70 font-light text-sm mb-2 line-clamp-2">El catálogo más completo de la casa: quesos, yogures, mantequillas y embutidos mexicanos para todo tu negocio.</p>
+                        <div class="mt-auto pt-4 border-t border-charcoal/10">
+                            <span class="block w-full text-center border-2 border-wine text-wine py-2.5 text-xs font-medium rounded-full group-hover:bg-wine group-hover:text-white transition-all duration-300">Ver Catálogo</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
         <!-- Categories Showcase -->
         <section class="max-w-7xl mx-auto px-5 md:px-16 py-16 md:py-20" id="catalog">
             <div class="text-center max-w-xl mx-auto mb-12 md:mb-16 animate-fade-up" style="animation-delay: 0.2s;">
@@ -90,7 +276,7 @@
 
             <!-- Grade Responsiva com 3 Cards Grandes -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10">
-                
+
                 <!-- Categoria 1: Quesos -->
                 <div class="bg-white rounded-[2.5rem] overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 group border border-cream-dark flex flex-col">
                     <div class="aspect-[4/5] w-full overflow-hidden relative">
@@ -150,7 +336,7 @@
                     <span class="text-[11px] md:text-[10px] text-cream/70 uppercase tracking-[0.2em] font-medium mt-1 md:mt-0 block">Alta Culinária</span>
                 </div>
             </div>
-            
+
             <div class="flex flex-col gap-2 items-center md:items-end mt-4 md:mt-0">
                 <p class="text-sm font-light text-cream/80">© 2024 Noanto Distribuidora.</p>
                 <p class="text-xs font-light text-cream/50">Todos los derechos reservados.</p>

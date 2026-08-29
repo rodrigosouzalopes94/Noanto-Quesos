@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="es-MX">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>España - Noanto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="noanto.js"></script>
+    <link rel="stylesheet" href="noanto.css">
+</head>
+<body class="bg-cream text-charcoal font-sans custom-scrollbar selection:bg-gold selection:text-white flex flex-col min-h-screen">
+
+    <nav class="glass-nav flex justify-between items-center w-full px-5 md:px-16 py-4 fixed top-0 z-50 transition-all duration-300">
+        <a href="index.html" class="flex items-center gap-3">
+            <img alt="Noanto Logo" class="h-10 w-10 rounded-full object-cover shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAI_N6ZMugwekVh2r6HYrCVbYLMzrmfzIwJkwA2DaAR4ZbHtyHa1ltw0f3YaGwG7IJAb0tlhFCYivZh3KwtQ8gzvqcvRzDbeQRey0TOHzn3npzRAuRCTvCuzAr85aBffbum3GiqJxRlFsRvuwcX8-fbJGPVno_aSXotl4ISGCFQaOuCkb6GcTtHKJvf_BmiD6_KUSeoWqKisMCuKLdDybEd9CliT2MLeoUVfBrqQRd0Hydvs7YLX_SMwVXPfSqRmV3igA">
+            <span class="text-xl font-serif font-bold text-wine-dark tracking-tight">Noanto<span class="text-gold">.</span></span>
+        </a>
+        <div class="hidden md:flex gap-8 items-center">
+            <a class="text-sm font-medium text-charcoal/70 hover:text-wine transition-colors" href="index.html">Inicio</a>
+            <div class="relative group/paises">
+                <button type="button" class="flex items-center gap-1.5 text-sm font-medium text-charcoal/70 hover:text-wine transition-colors py-2">
+                    Países
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" class="transition-transform duration-300 group-hover/paises:rotate-180">
+                        <path d="M6 9l6 6 6-6"/>
+                    </svg>
+                </button>
+                <div class="absolute top-full left-1/2 -translate-x-1/2 pt-3 opacity-0 invisible translate-y-1 group-hover/paises:opacity-100 group-hover/paises:visible group-hover/paises:translate-y-0 focus-within:opacity-100 focus-within:visible focus-within:translate-y-0 transition-all duration-200 z-50">
+                    <div class="bg-white rounded-2xl shadow-[0_20px_50px_rgba(42,42,42,0.15)] border border-cream-dark p-3 grid grid-cols-2 gap-1 w-[380px]">
+                    <a href="francia.html" class="flex items-center gap-2.5 px-4 py-2.5 rounded-xl hover:bg-wine/5 hover:text-wine transition-colors text-sm text-charcoal/80"><span class="text-base leading-none">🇫🇷</span>Francia</a>
+                    <a href="italia.html" class="flex items-center gap-2.5 px-4 py-2.5 rounded-xl hover:bg-wine/5 hover:text-wine transition-colors text-sm text-charcoal/80"><span class="text-base leading-none">🇮🇹</span>Italia</a>
+                    <a href="suiza.html" class="flex items-center gap-2.5 px-4 py-2.5 rounded-xl hover:bg-wine/5 hover:text-wine transition-colors text-sm text-charcoal/80"><span class="text-base leading-none">🇨🇭</span>Suiza</a>
+                    <a href="holanda.html" class="flex items-center gap-2.5 px-4 py-2.5 rounded-xl hover:bg-wine/5 hover:text-wine transition-colors text-sm text-charcoal/80"><span class="text-base leading-none">🇳🇱</span>Holanda</a>
+                    <a href="espana.html" class="flex items-center gap-2.5 px-4 py-2.5 rounded-xl hover:bg-wine/5 hover:text-wine transition-colors text-sm text-charcoal/80"><span class="text-base leading-none">🇪🇸</span>España</a>
+                    <a href="reino-unido.html" class="flex items-center gap-2.5 px-4 py-2.5 rounded-xl hover:bg-wine/5 hover:text-wine transition-colors text-sm text-charcoal/80"><span class="text-base leading-none">🇬🇧</span>Reino Unido</a>
+                    <a href="estados-unidos.html" class="flex items-center gap-2.5 px-4 py-2.5 rounded-xl hover:bg-wine/5 hover:text-wine transition-colors text-sm text-charcoal/80"><span class="text-base leading-none">🇺🇸</span>Estados Unidos</a>
+                    <a href="dinamarca.html" class="flex items-center gap-2.5 px-4 py-2.5 rounded-xl hover:bg-wine/5 hover:text-wine transition-colors text-sm text-charcoal/80"><span class="text-base leading-none">🇩🇰</span>Dinamarca</a>
+                    <a href="nueva-zelanda.html" class="flex items-center gap-2.5 px-4 py-2.5 rounded-xl hover:bg-wine/5 hover:text-wine transition-colors text-sm text-charcoal/80"><span class="text-base leading-none">🇳🇿</span>Nueva Zelanda</a>
+                    <a href="uruguay.html" class="flex items-center gap-2.5 px-4 py-2.5 rounded-xl hover:bg-wine/5 hover:text-wine transition-colors text-sm text-charcoal/80"><span class="text-base leading-none">🇺🇾</span>Uruguay</a>
+                    <a href="mexico.html" class="flex items-center gap-2.5 px-4 py-2.5 rounded-xl hover:bg-wine/5 hover:text-wine transition-colors text-sm text-charcoal/80"><span class="text-base leading-none">🇲🇽</span>México</a>
+                    </div>
+                </div>
+            </div>
+            <a class="text-sm font-medium text-charcoal/70 hover:text-wine transition-colors" href="index.html#catalog">Catálogo</a>
+        </div>
+        <a class="bg-wine text-white px-5 py-2.5 text-sm font-medium rounded-full flex items-center gap-2 hover:bg-wine-light hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300" href="https://wa.me/5581333256">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+            </svg>
+            <span class="hidden sm:inline">Cotizar</span>
+        </a>
+    </nav>
+
+    <main class="flex-grow pt-32 pb-20 max-w-7xl mx-auto px-5 md:px-16 w-full">
+        <div class="flex flex-col md:flex-row gap-8 items-end mb-16 animate-fade-up">
+            <div class="w-full md:w-1/3 aspect-[4/3] rounded-[2rem] overflow-hidden shadow-lg relative group">
+                <img src="images/espana-hero.jpg" alt="Productos de España" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+            </div>
+            <div class="w-full md:w-2/3">
+                <span class="text-wine text-xs uppercase tracking-widest font-bold bg-wine/10 px-4 py-1.5 rounded-full">🇪🇸 Catálogo por país</span>
+                <h1 class="text-4xl md:text-5xl font-serif text-wine-dark mt-4 mb-3">España</h1>
+                <p class="text-charcoal/70 font-light max-w-xl">Manchego, Idiazábal, jamón ibérico y serrano: el sabor auténtico de la Península Ibérica para tu carta.</p>
+            </div>
+        </div>
+
+        <section class="mb-16 md:mb-20">
+            <div class="flex items-center gap-4 mb-8">
+                <h2 class="text-2xl md:text-3xl font-serif text-wine-dark">Quesos Manchego</h2>
+                <div class="flex-grow h-px bg-gold/40"></div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-001.png" alt="Manchego Semicurado" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Manchego Semicurado</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">Pieza 3 Kg</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Manchego%20Semicurado%20%28Pieza%203%20Kg%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-002.png" alt="Manchego Curado" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Manchego Curado</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">Pieza 3 Kg</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Manchego%20Curado%20%28Pieza%203%20Kg%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-003.png" alt="Manchego Viejo" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Manchego Viejo</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">Pieza 3 Kg</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Manchego%20Viejo%20%28Pieza%203%20Kg%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-004.png" alt="Manchego D.O. Don Bernardo" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Manchego D.O. Don Bernardo</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">Pieza 3 Kg</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Manchego%20D.O.%20Don%20Bernardo%20%28Pieza%203%20Kg%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-005.png" alt="Manchego Don Bernardo al Romero" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Manchego Don Bernardo al Romero</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">Pieza 3 Kg</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Manchego%20Don%20Bernardo%20al%20Romero%20%28Pieza%203%20Kg%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-006.png" alt="Manchego Don Bernardo con Trufa" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Manchego Don Bernardo con Trufa</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">Pieza 3 Kg</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Manchego%20Don%20Bernardo%20con%20Trufa%20%28Pieza%203%20Kg%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="mb-16 md:mb-20">
+            <div class="flex items-center gap-4 mb-8">
+                <h2 class="text-2xl md:text-3xl font-serif text-wine-dark">Idiazábal</h2>
+                <div class="flex-grow h-px bg-gold/40"></div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-007.png" alt="Idiazábal D.O." loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Idiazábal D.O.</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">Pieza 3 Kg</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Idiazábal%20D.O.%20%28Pieza%203%20Kg%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="mb-16 md:mb-20">
+            <div class="flex items-center gap-4 mb-8">
+                <h2 class="text-2xl md:text-3xl font-serif text-wine-dark">Quesos de Oveja</h2>
+                <div class="flex-grow h-px bg-gold/40"></div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-008.png" alt="Queso de Oveja al Romero" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Queso de Oveja al Romero</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">Pieza 3 Kg</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Queso%20de%20Oveja%20al%20Romero%20%28Pieza%203%20Kg%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-009.png" alt="Queso de Oveja con Trufa" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Queso de Oveja con Trufa</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">Pieza 3 Kg</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Queso%20de%20Oveja%20con%20Trufa%20%28Pieza%203%20Kg%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-010.png" alt="Queso de Oveja al Vino" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Queso de Oveja al Vino</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">Pieza 3 Kg</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Queso%20de%20Oveja%20al%20Vino%20%28Pieza%203%20Kg%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-011.png" alt="Idiazábal DOP Oveja Vasco Navarro" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Idiazábal DOP Oveja Vasco Navarro</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">Pieza 3 Kg</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Idiazábal%20DOP%20Oveja%20Vasco%20Navarro%20%28Pieza%203%20Kg%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-012.png" alt="Cabra Natural Comalca" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Cabra Natural Comalca</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">Pieza</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Cabra%20Natural%20Comalca%20%28Pieza%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-013.png" alt="Cabra Ceniza Comalca" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Cabra Ceniza Comalca</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">Pieza</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Cabra%20Ceniza%20Comalca%20%28Pieza%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="mb-16 md:mb-20">
+            <div class="flex items-center gap-4 mb-8">
+                <h2 class="text-2xl md:text-3xl font-serif text-wine-dark">Jamón Serrano</h2>
+                <div class="flex-grow h-px bg-gold/40"></div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-014.png" alt="Jamón Serrano Reserva Rabel" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Jamón Serrano Reserva Rabel</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">Pieza 6.5 Kg · Curado mínimo 12 meses</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Jamón%20Serrano%20Reserva%20Rabel%20%28Pieza%206.5%20Kg%20·%20Curado%20mínimo%2012%20meses%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-015.png" alt="Jamón Serrano Gran Reserva Rabel" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Jamón Serrano Gran Reserva Rabel</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">Pieza 7 Kg · Curado mínimo 18 meses</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Jamón%20Serrano%20Gran%20Reserva%20Rabel%20%28Pieza%207%20Kg%20·%20Curado%20mínimo%2018%20meses%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-016.png" alt="Jamón Serrano Rebanado" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Jamón Serrano Rebanado</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">100 Gr · Lonchas finas listas para servir</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Jamón%20Serrano%20Rebanado%20%28100%20Gr%20·%20Lonchas%20finas%20listas%20para%20servir%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="mb-16 md:mb-20">
+            <div class="flex items-center gap-4 mb-8">
+                <h2 class="text-2xl md:text-3xl font-serif text-wine-dark">Jamón Ibérico</h2>
+                <div class="flex-grow h-px bg-gold/40"></div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-017.png" alt="Jamón Ibérico Cebo" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Jamón Ibérico Cebo</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">50% Raza Ibérica · Alimentación en dehesa</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Jamón%20Ibérico%20Cebo%20%2850%%20Raza%20Ibérica%20·%20Alimentación%20en%20dehesa%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-018.png" alt="Jamón Ibérico Bellota" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Jamón Ibérico Bellota</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">100% Ibérico · Alimentado con bellota de encina</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Jamón%20Ibérico%20Bellota%20%28100%%20Ibérico%20·%20Alimentado%20con%20bellota%20de%20encina%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-019.png" alt="Paleta Ibérica Cebo" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Paleta Ibérica Cebo</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">Curación mínima 24 meses</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Paleta%20Ibérica%20Cebo%20%28Curación%20mínima%2024%20meses%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <div class="w-20 h-20 rounded-full bg-wine/10 flex items-center justify-center text-wine">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" class="w-9 h-9">
+                            <path d="M3 10l8-6 10 6-2 10a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2z"/>
+                            <circle cx="9" cy="15" r="1"/><circle cx="13" cy="17" r="1"/><circle cx="15" cy="13" r="1"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Paleta Ibérica Bellota</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">100% Ibérico de bellota</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Paleta%20Ibérica%20Bellota%20%28100%%20Ibérico%20de%20bellota%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-020.png" alt="Queso de Oveja con Romero" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Queso de Oveja con Romero</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">180 Gr</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Queso%20de%20Oveja%20con%20Romero%20%28180%20Gr%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-021.png" alt="Queso de Oveja con Castañas" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Queso de Oveja con Castañas</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">180 Gr</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Queso%20de%20Oveja%20con%20Castañas%20%28180%20Gr%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-022.png" alt="Queso de Oveja Trufado" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Queso de Oveja Trufado</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">200 Gr</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Queso%20de%20Oveja%20Trufado%20%28200%20Gr%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="mb-16 md:mb-20">
+            <div class="flex items-center gap-4 mb-8">
+                <h2 class="text-2xl md:text-3xl font-serif text-wine-dark">Embutidos Españoles</h2>
+                <div class="flex-grow h-px bg-gold/40"></div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-023.png" alt="Chorizo Sarta Rabel" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Chorizo Sarta Rabel</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">Chorizo</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Chorizo%20Sarta%20Rabel%20%28Chorizo%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-024.png" alt="Chorizo Ibérico" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Chorizo Ibérico</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">Chorizo</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Chorizo%20Ibérico%20%28Chorizo%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-025.png" alt="Chorizo Pamplona" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Chorizo Pamplona</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">Chorizo</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Chorizo%20Pamplona%20%28Chorizo%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-026.png" alt="Salchichón Ibérico" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Salchichón Ibérico</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">Salchichón</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Salchichón%20Ibérico%20%28Salchichón%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-027.png" alt="Salchichón Sarta" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Salchichón Sarta</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">Salchichón</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Salchichón%20Sarta%20%28Salchichón%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-028.png" alt="Lomo Embuchado Ibérico" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Lomo Embuchado Ibérico</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">Lomo</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Lomo%20Embuchado%20Ibérico%20%28Lomo%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-029.png" alt="Fuet Extra" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Fuet Extra</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">Fuet</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Fuet%20Extra%20%28Fuet%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-030.png" alt="Surtido Tapas Real Ibérico" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Surtido Tapas Real Ibérico</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">200 Gr · 4/50gr jamón, lomo, chorizo, salchichón</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Surtido%20Tapas%20Real%20Ibérico%20%28200%20Gr%20·%204/50gr%20jamón,%20lomo,%20chorizo,%20salchichón%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="mb-16 md:mb-20">
+            <div class="flex items-center gap-4 mb-8">
+                <h2 class="text-2xl md:text-3xl font-serif text-wine-dark">Jamones & Especialidades</h2>
+                <div class="flex-grow h-px bg-gold/40"></div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-031.png" alt="Jamón Serrano Rebanado" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Jamón Serrano Rebanado</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">500 Gr</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Jamón%20Serrano%20Rebanado%20%28500%20Gr%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-032.png" alt="Jamón Serrano FAR S/H Cuadrado Sin Puntas" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Jamón Serrano FAR S/H Cuadrado Sin Puntas</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5"></p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Jamón%20Serrano%20FAR%20S/H%20Cuadrado%20Sin%20Puntas" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-033.png" alt="Jamón Serrano Iglesias" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Jamón Serrano Iglesias</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5"></p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Jamón%20Serrano%20Iglesias" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="mb-16 md:mb-20">
+            <div class="flex items-center gap-4 mb-8">
+                <h2 class="text-2xl md:text-3xl font-serif text-wine-dark">Quesos & Aceitunas</h2>
+                <div class="flex-grow h-px bg-gold/40"></div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-034.png" alt="Semicurado García Baquero" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Semicurado García Baquero</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">1 Kg</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Semicurado%20García%20Baquero%20%281%20Kg%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-035.png" alt="Aceituna Verde" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Aceituna Verde</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">Neto 660 / Drenada 350</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Aceituna%20Verde%20%28Neto%20660%20/%20Drenada%20350%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-036.png" alt="Aceituna Negra" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Aceituna Negra</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">Neto 660 / Drenada 350</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Aceituna%20Negra%20%28Neto%20660%20/%20Drenada%20350%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="mb-16 md:mb-20">
+            <div class="flex items-center gap-4 mb-8">
+                <h2 class="text-2xl md:text-3xl font-serif text-wine-dark">Quesos Españoles</h2>
+                <div class="flex-grow h-px bg-gold/40"></div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-037.png" alt="Cabra Lanzarote" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Cabra Lanzarote</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5"></p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Cabra%20Lanzarote" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-038.png" alt="Feta Lanzarote" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Feta Lanzarote</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5"></p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Feta%20Lanzarote" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-039.png" alt="Manchego Noche Buena" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Manchego Noche Buena</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5"></p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Manchego%20Noche%20Buena" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-040.png" alt="Maese Miguel Curado" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Maese Miguel Curado</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">500 Gr</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Maese%20Miguel%20Curado%20%28500%20Gr%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-041.png" alt="Maese Miguel Semicurado" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Maese Miguel Semicurado</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">1 Kg</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Maese%20Miguel%20Semicurado%20%281%20Kg%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-042.png" alt="Maese Semicurado 3 Meses" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Maese Semicurado 3 Meses</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5"></p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Maese%20Semicurado%203%20Meses" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-043.png" alt="Maese Miguel Curado 6 Meses" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Maese Miguel Curado 6 Meses</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5"></p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Maese%20Miguel%20Curado%206%20Meses" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-044.png" alt="Maese Miguel" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Maese Miguel</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">500 Gr</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Maese%20Miguel%20%28500%20Gr%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-045.png" alt="Rabel Cabra al Vino" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Rabel Cabra al Vino</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">Pieza 500 Gr</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Rabel%20Cabra%20al%20Vino%20%28Pieza%20500%20Gr%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-046.png" alt="Rabel Cabra Curado Naranja" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Rabel Cabra Curado Naranja</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">Pieza 500 Gr</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Rabel%20Cabra%20Curado%20Naranja%20%28Pieza%20500%20Gr%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-047.png" alt="Rabel Ibérico Semicurado Negro" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Rabel Ibérico Semicurado Negro</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">Pieza 500 Gr</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Rabel%20Ibérico%20Semicurado%20Negro%20%28Pieza%20500%20Gr%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-048.png" alt="Rabel Ibérico Semicurado" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Rabel Ibérico Semicurado</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">Pieza 3 Kg</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Rabel%20Ibérico%20Semicurado%20%28Pieza%203%20Kg%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-049.png" alt="Oveja Trufada Rabel" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Oveja Trufada Rabel</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">3 Kg</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Oveja%20Trufada%20Rabel%20%283%20Kg%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-050.png" alt="Rabel Queso de Oveja Ajo Negro" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Rabel Queso de Oveja Ajo Negro</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">200 Gr</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Rabel%20Queso%20de%20Oveja%20Ajo%20Negro%20%28200%20Gr%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <div class="w-20 h-20 rounded-full bg-wine/10 flex items-center justify-center text-wine">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" class="w-9 h-9">
+                            <path d="M3 10l8-6 10 6-2 10a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2z"/>
+                            <circle cx="9" cy="15" r="1"/><circle cx="13" cy="17" r="1"/><circle cx="15" cy="13" r="1"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Rabel Queso de Oveja con Trufa</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">209 Gr</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Rabel%20Queso%20de%20Oveja%20con%20Trufa%20%28209%20Gr%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-051.png" alt="Queso Crema Reny Picot" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Queso Crema Reny Picot</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">4/190 Gr</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Queso%20Crema%20Reny%20Picot%20%284/190%20Gr%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-052.png" alt="Conde Duque Curado" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Conde Duque Curado</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">1 Kg · 6 meses</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Conde%20Duque%20Curado%20%281%20Kg%20·%206%20meses%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-053.png" alt="Conde Duque Semicurado" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Conde Duque Semicurado</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">1 Kg · 3 meses</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Conde%20Duque%20Semicurado%20%281%20Kg%20·%203%20meses%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-054.png" alt="Conde Duque Curado" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Conde Duque Curado</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">3 Kg · 6 meses</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Conde%20Duque%20Curado%20%283%20Kg%20·%206%20meses%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <div class="w-20 h-20 rounded-full bg-wine/10 flex items-center justify-center text-wine">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" class="w-9 h-9">
+                            <path d="M3 10l8-6 10 6-2 10a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2z"/>
+                            <circle cx="9" cy="15" r="1"/><circle cx="13" cy="17" r="1"/><circle cx="15" cy="13" r="1"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Conde Duque Semicurado</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">3 Kg · 3 meses</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Conde%20Duque%20Semicurado%20%283%20Kg%20·%203%20meses%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-055.png" alt="Cabra Lanzarote con Etiqueta" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Cabra Lanzarote con Etiqueta</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">200 Gr</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Cabra%20Lanzarote%20con%20Etiqueta%20%28200%20Gr%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-056.png" alt="Queso de Oveja con Cerveza" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Queso de Oveja con Cerveza</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">Cuña Pieza</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Queso%20de%20Oveja%20con%20Cerveza%20%28Cuña%20Pieza%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-057.png" alt="Queso de Oveja a la Trufa" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Queso de Oveja a la Trufa</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">Cuña Pieza</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Queso%20de%20Oveja%20a%20la%20Trufa%20%28Cuña%20Pieza%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-058.png" alt="Queso de Oveja con Aceitunas" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Queso de Oveja con Aceitunas</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">Pieza</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Queso%20de%20Oveja%20con%20Aceitunas%20%28Pieza%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-059.png" alt="Queso Murcia al Vino" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Queso Murcia al Vino</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">Kg</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Queso%20Murcia%20al%20Vino%20%28Kg%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-060.png" alt="Queso de Cabra al Romero" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Queso de Cabra al Romero</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">Kg</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Queso%20de%20Cabra%20al%20Romero%20%28Kg%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-061.png" alt="Cuña Cereza" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Cuña Cereza</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">Pieza</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Cuña%20Cereza%20%28Pieza%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="mb-16 md:mb-20">
+            <div class="flex items-center gap-4 mb-8">
+                <h2 class="text-2xl md:text-3xl font-serif text-wine-dark">Carnes Frías y Embutidos</h2>
+                <div class="flex-grow h-px bg-gold/40"></div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-062.png" alt="Cuña Aceite" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Cuña Aceite</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">Pieza</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Cuña%20Aceite%20%28Pieza%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-063.png" alt="Cuña Trufa" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Cuña Trufa</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">Pieza</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Cuña%20Trufa%20%28Pieza%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-064.png" alt="Jamón Serrano de Pharma" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Jamón Serrano de Pharma</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5"></p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Jamón%20Serrano%20de%20Pharma" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-065.png" alt="Cantimpalo" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Cantimpalo</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5"></p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Cantimpalo" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-066.png" alt="Chorizo Pamplona" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Chorizo Pamplona</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5"></p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Chorizo%20Pamplona" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-067.png" alt="Chistorra" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Chistorra</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">340 Gr</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Chistorra%20%28340%20Gr%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-068.png" alt="Chorizo Español" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Chorizo Español</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5"></p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Chorizo%20Español" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-069.png" alt="Chistorra" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Chistorra</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">1 Kg</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Chistorra%20%281%20Kg%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-070.png" alt="Chistorra" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Chistorra</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">1/2 Kg</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Chistorra%20%281/2%20Kg%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-071.png" alt="Jamón Serrano" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Jamón Serrano</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5"></p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Jamón%20Serrano" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-072.png" alt="Chorizo Salamanca" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Chorizo Salamanca</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5"></p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Chorizo%20Salamanca" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-073.png" alt="Morcilla de Arroz/Cebolla" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Morcilla de Arroz/Cebolla</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5"></p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Morcilla%20de%20Arroz/Cebolla" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-074.png" alt="Jamón Serrano Silo" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Jamón Serrano Silo</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5"></p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Jamón%20Serrano%20Silo" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-075.png" alt="Jamón Serrano Empacado y Rebanado" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Jamón Serrano Empacado y Rebanado</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">100 Gr</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Jamón%20Serrano%20Empacado%20y%20Rebanado%20%28100%20Gr%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-076.png" alt="Jamón Serrano Prensado" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Jamón Serrano Prensado</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5"></p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Jamón%20Serrano%20Prensado" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-077.png" alt="Lomo Embuchado" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Lomo Embuchado</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5"></p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Lomo%20Embuchado" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-078.png" alt="Chistorra" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Chistorra</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">270 Gr</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Chistorra%20%28270%20Gr%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-079.png" alt="Chorizo Tipo Español" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Chorizo Tipo Español</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">550 Gr</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Chorizo%20Tipo%20Español%20%28550%20Gr%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-080.png" alt="Chorizo Pamplona" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Chorizo Pamplona</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">100 Gr</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Chorizo%20Pamplona%20%28100%20Gr%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-081.png" alt="Chorizo Salamanca" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Chorizo Salamanca</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">100 Gr</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Chorizo%20Salamanca%20%28100%20Gr%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <div class="w-20 h-20 rounded-full bg-wine/10 flex items-center justify-center text-wine">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" class="w-9 h-9">
+                            <path d="M3 10l8-6 10 6-2 10a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2z"/>
+                            <circle cx="9" cy="15" r="1"/><circle cx="13" cy="17" r="1"/><circle cx="15" cy="13" r="1"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Chorizo y Salami "Snack Gurmet"</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">100 Gr</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Chorizo%20y%20Salami%20"Snack%20Gurmet"%20%28100%20Gr%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-082.png" alt="Salchichón Navideño" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Salchichón Navideño</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">2/500 Gr</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Salchichón%20Navideño%20%282/500%20Gr%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-083.png" alt="Jamón Serrano" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Jamón Serrano</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">100 Gr</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Jamón%20Serrano%20%28100%20Gr%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-084.png" alt="Salchichón Español" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Salchichón Español</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">100 Gr</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Salchichón%20Español%20%28100%20Gr%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-085.png" alt="Lomo Embuchado" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Lomo Embuchado</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">100 Gr</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Lomo%20Embuchado%20%28100%20Gr%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-086.png" alt="Chorizo Pamplona" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Chorizo Pamplona</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">2 Pz / 1.5 Kg</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Chorizo%20Pamplona%20%282%20Pz%20/%201.5%20Kg%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-087.png" alt="Chorizo Pamplona" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Chorizo Pamplona</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">100 Gr / 6 Pz</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Chorizo%20Pamplona%20%28100%20Gr%20/%206%20Pz%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-088.png" alt="Chorizo Salamanca" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Chorizo Salamanca</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">100 Gr / 6 Paq</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Chorizo%20Salamanca%20%28100%20Gr%20/%206%20Paq%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-089.png" alt="Jamón Serrano" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Jamón Serrano</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">4.5 Kg</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Jamón%20Serrano%20%284.5%20Kg%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-090.png" alt="Jamón Serrano" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Jamón Serrano</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">100 Gr / 6 Paq</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Jamón%20Serrano%20%28100%20Gr%20/%206%20Paq%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-091.png" alt="Lomo Embuchado" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Lomo Embuchado</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">2 Pz / 1 Kg</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Lomo%20Embuchado%20%282%20Pz%20/%201%20Kg%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <div class="w-20 h-20 rounded-full bg-wine/10 flex items-center justify-center text-wine">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" class="w-9 h-9">
+                            <path d="M3 10l8-6 10 6-2 10a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2z"/>
+                            <circle cx="9" cy="15" r="1"/><circle cx="13" cy="17" r="1"/><circle cx="15" cy="13" r="1"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Lomo Embuchado</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">Caja C/6 Pqt 100 Gr</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Lomo%20Embuchado%20%28Caja%20C/6%20Pqt%20100%20Gr%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-092.png" alt="Jamón Serrano Español" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Jamón Serrano Español</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">Aprox 5 Kg</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Jamón%20Serrano%20Español%20%28Aprox%205%20Kg%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-[0_2px_18px_rgba(42,42,42,0.06)] hover:shadow-[0_22px_45px_rgba(114,28,36,0.16)] transition-all duration-500 hover:-translate-y-1.5 group flex flex-col p-3">
+                <div class="aspect-[4/3] w-full overflow-hidden relative bg-cream rounded-[1.4rem] flex items-center justify-center p-6">
+                    <img src="images/espana/es-093.png" alt="Jamón Serrano Costa Brava" loading="lazy" class="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <div class="pt-5 px-2 pb-2 flex flex-col flex-grow">
+                    <h3 class="text-lg font-serif text-wine-dark mb-1 leading-snug">Jamón Serrano Costa Brava</h3>
+                    <p class="text-sm text-charcoal/60 font-light mb-5">Paq 2/250 Gr</p>
+                    <a href="https://wa.me/5581333256?text=Cotización:%20Jamón%20Serrano%20Costa%20Brava%20%28Paq%202/250%20Gr%29" class="mt-auto block text-center bg-wine/5 text-wine py-3 rounded-full text-sm font-medium hover:bg-wine hover:text-white transition-colors duration-300">Cotizar</a>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-wine-dark text-cream border border-wine-light/30 mx-4 md:mx-8 mb-6 mt-auto rounded-[2.5rem] shadow-2xl overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 py-10 flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">
+            <div class="flex items-center gap-4">
+                <img alt="Noanto Logo" class="h-12 w-12 rounded-full border-2 border-gold/50" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjk7tStclocpalN8Eq01UsmdR04rzr39VMTD05s8qV0SZSRTEoGpwtgccQeUyCVDPcLAAeVoPaVq1yEAnvjYcc2QSXMMqUjqtrwke7bYy8RVUgSKx3YkmraiC5T23s2Kwm_WQa_-NhQKGTZcQsTMD02UZ7inIcIsiSGu3zQLIqsJKbftFwXbGETW9K56J-t6Am8DwiPHaI80xNDd2YJDv09LiOJDiDnumV-TKGB29sdksSCx6HL-NglTBVpLELCjOAkQ">
+                <div>
+                    <span class="block text-2xl font-serif font-bold text-white tracking-wide">Noanto<span class="text-gold">.</span></span>
+                    <span class="text-[11px] text-cream/70 uppercase tracking-[0.2em] font-medium mt-1 block">Distribuidora de Quesos</span>
+                </div>
+            </div>
+            <div>
+                <p class="text-sm font-light text-cream/80">&copy; 2026 Noanto Distribuidora. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a class="fixed bottom-6 right-6 md:bottom-8 md:right-8 bg-[#25D366] text-white w-14 h-14 md:w-16 md:h-16 rounded-full flex items-center justify-center shadow-[0_8px_16px_rgba(37,211,102,0.3)] hover:scale-110 hover:shadow-[0_10px_20px_rgba(37,211,102,0.4)] transition-all duration-300 z-50 animate-float" href="https://wa.me/5581333256">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 16 16" class="w-7 h-7 md:w-8 md:h-8">
+            <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+        </svg>
+    </a>
+</body>
+</html>
