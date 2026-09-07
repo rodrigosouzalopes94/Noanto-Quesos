@@ -50,6 +50,21 @@
                     </div>
                 </div>
             </div>
+            <div class="relative group/categorias">
+                <button type="button" class="flex items-center gap-1.5 text-sm font-medium text-charcoal/70 hover:text-wine transition-colors py-2">
+                    Categorías
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" class="transition-transform duration-300 group-hover/categorias:rotate-180">
+                        <path d="M6 9l6 6 6-6"/>
+                    </svg>
+                </button>
+                <div class="absolute top-full left-1/2 -translate-x-1/2 pt-3 opacity-0 invisible translate-y-1 group-hover/categorias:opacity-100 group-hover/categorias:visible group-hover/categorias:translate-y-0 focus-within:opacity-100 focus-within:visible focus-within:translate-y-0 transition-all duration-200 z-50">
+                    <div class="bg-white rounded-2xl shadow-[0_20px_50px_rgba(42,42,42,0.15)] border border-cream-dark p-3 flex flex-col gap-1 w-[200px]">
+                    <a href="quesos.html" class="flex items-center gap-2.5 px-4 py-2.5 rounded-xl hover:bg-wine/5 hover:text-wine transition-colors text-sm text-charcoal/80"><span class="text-base leading-none">🧀</span>Quesos</a>
+                    <a href="embutidos.html" class="flex items-center gap-2.5 px-4 py-2.5 rounded-xl hover:bg-wine/5 hover:text-wine transition-colors text-sm text-charcoal/80"><span class="text-base leading-none">🥓</span>Embutidos</a>
+                    <a href="lacteos.html" class="flex items-center gap-2.5 px-4 py-2.5 rounded-xl hover:bg-wine/5 hover:text-wine transition-colors text-sm text-charcoal/80"><span class="text-base leading-none">🥛</span>Lácteos</a>
+                    </div>
+                </div>
+            </div>
             <a class="text-sm font-medium text-charcoal/70 hover:text-wine transition-colors" href="index.html#catalog">Catálogo</a>
         </div>
         <a class="bg-wine text-white px-5 py-2.5 text-sm font-medium rounded-full flex items-center gap-2 hover:bg-wine-light hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300" href="https://wa.me/5581333256">
@@ -100,6 +115,66 @@
                 </div>
             </div>
         </section>
+
+        <!-- Categories Showcase -->
+        <section class="max-w-7xl mx-auto px-5 md:px-16 py-16 md:py-20" id="catalog">
+            <div class="text-center max-w-xl mx-auto mb-12 md:mb-16 animate-fade-up" style="animation-delay: 0.2s;">
+                <h2 class="text-3xl md:text-5xl font-serif text-wine-dark mb-4">Nuestras Categorías</h2>
+                <div class="w-16 h-1 bg-gold mx-auto mb-6"></div>
+                <p class="text-sm md:text-lg text-charcoal/70 font-light">Explora nuestro catálogo dividido en tres grandes familias de productos premium.</p>
+            </div>
+
+            <!-- Grade Responsiva com 3 Cards Grandes -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10">
+
+                <!-- Categoria 1: Quesos -->
+                <div class="bg-white rounded-[2.5rem] overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 group border border-cream-dark flex flex-col">
+                    <div class="aspect-[4/5] w-full overflow-hidden relative">
+                        <img alt="Quesos Artesanales" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?q=80&w=800&auto=format&fit=crop">
+                        <div class="absolute inset-0 bg-wine/0 group-hover:bg-wine/10 transition-colors duration-300"></div>
+                    </div>
+                    <div class="p-8 flex flex-col gap-3 flex-grow">
+                        <h3 class="text-3xl md:text-2xl lg:text-3xl font-serif text-wine-dark leading-tight">Quesos</h3>
+                        <p class="text-charcoal/70 font-light text-sm md:text-base mb-4">Nuestra selección curada de quesos artesanales, añejos y frescos de la más alta calidad.</p>
+                        <div class="mt-auto pt-6 border-t border-charcoal/10">
+                            <a class="block w-full text-center border-2 border-wine text-wine py-3.5 text-sm font-medium rounded-full hover:bg-wine hover:text-white transition-all duration-300" href="quesos.html">Ver Catálogo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Categoria 2: Embutidos (FOTO GARANTIDA DE SALAME/LINGUIÇA) -->
+                <div class="bg-white rounded-[2.5rem] overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 group border border-cream-dark flex flex-col">
+                    <div class="aspect-[4/5] w-full overflow-hidden relative">
+                        <img alt="Embutidos y Charcutería" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://images.unsplash.com/photo-1585325701165-351af916e581?auto=format&fit=crop&w=800&q=80">
+                        <div class="absolute inset-0 bg-wine/0 group-hover:bg-wine/10 transition-colors duration-300"></div>
+                    </div>
+                    <div class="p-8 flex flex-col gap-3 flex-grow">
+                        <h3 class="text-3xl md:text-2xl lg:text-3xl font-serif text-wine-dark leading-tight">Embutidos</h3>
+                        <p class="text-charcoal/70 font-light text-sm md:text-base mb-4">Descubre nuestra fina selección de jamones, salamis y charcutería de origen internacional.</p>
+                        <div class="mt-auto pt-6 border-t border-charcoal/10">
+                            <a class="block w-full text-center border-2 border-wine text-wine py-3.5 text-sm font-medium rounded-full hover:bg-wine hover:text-white transition-all duration-300" href="embutidos.html">Ver Catálogo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Categoria 3: Lácteos -->
+                <div class="bg-white rounded-[2.5rem] overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 group border border-cream-dark flex flex-col">
+                    <div class="aspect-[4/5] w-full overflow-hidden relative">
+                        <img alt="Lácteos Premium" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://images.unsplash.com/photo-1628088062854-d1870b4553da?q=80&w=800&auto=format&fit=crop">
+                        <div class="absolute inset-0 bg-wine/0 group-hover:bg-wine/10 transition-colors duration-300"></div>
+                    </div>
+                    <div class="p-8 flex flex-col gap-3 flex-grow">
+                        <h3 class="text-3xl md:text-2xl lg:text-3xl font-serif text-wine-dark leading-tight">Lácteos</h3>
+                        <p class="text-charcoal/70 font-light text-sm md:text-base mb-4">Mantequillas, cremas y productos lácteos de origen natural para enriquecer tus recetas.</p>
+                        <div class="mt-auto pt-6 border-t border-charcoal/10">
+                            <a class="block w-full text-center border-2 border-wine text-wine py-3.5 text-sm font-medium rounded-full hover:bg-wine hover:text-white transition-all duration-300" href="lacteos.html">Ver Catálogo</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
 
         <!-- Explora por País -->
         <section class="max-w-7xl mx-auto px-5 md:px-16 py-16 md:py-20">
@@ -266,64 +341,6 @@
             </div>
         </section>
 
-        <!-- Categories Showcase -->
-        <section class="max-w-7xl mx-auto px-5 md:px-16 py-16 md:py-20" id="catalog">
-            <div class="text-center max-w-xl mx-auto mb-12 md:mb-16 animate-fade-up" style="animation-delay: 0.2s;">
-                <h2 class="text-3xl md:text-5xl font-serif text-wine-dark mb-4">Nuestras Categorías</h2>
-                <div class="w-16 h-1 bg-gold mx-auto mb-6"></div>
-                <p class="text-sm md:text-lg text-charcoal/70 font-light">Explora nuestro catálogo dividido en tres grandes familias de productos premium.</p>
-            </div>
-
-            <!-- Grade Responsiva com 3 Cards Grandes -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10">
-
-                <!-- Categoria 1: Quesos -->
-                <div class="bg-white rounded-[2.5rem] overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 group border border-cream-dark flex flex-col">
-                    <div class="aspect-[4/5] w-full overflow-hidden relative">
-                        <img alt="Quesos Artesanales" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?q=80&w=800&auto=format&fit=crop">
-                        <div class="absolute inset-0 bg-wine/0 group-hover:bg-wine/10 transition-colors duration-300"></div>
-                    </div>
-                    <div class="p-8 flex flex-col gap-3 flex-grow">
-                        <h3 class="text-3xl md:text-2xl lg:text-3xl font-serif text-wine-dark leading-tight">Quesos</h3>
-                        <p class="text-charcoal/70 font-light text-sm md:text-base mb-4">Nuestra selección curada de quesos artesanales, añejos y frescos de la más alta calidad.</p>
-                        <div class="mt-auto pt-6 border-t border-charcoal/10">
-                            <a class="block w-full text-center border-2 border-wine text-wine py-3.5 text-sm font-medium rounded-full hover:bg-wine hover:text-white transition-all duration-300" href="https://wa.me/5581333256?text=Hola, me gustaría recibir el catálogo de Quesos.">Ver Catálogo</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Categoria 2: Embutidos (FOTO GARANTIDA DE SALAME/LINGUIÇA) -->
-                <div class="bg-white rounded-[2.5rem] overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 group border border-cream-dark flex flex-col">
-                    <div class="aspect-[4/5] w-full overflow-hidden relative">
-                        <img alt="Embutidos y Charcutería" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://images.unsplash.com/photo-1585325701165-351af916e581?auto=format&fit=crop&w=800&q=80">
-                        <div class="absolute inset-0 bg-wine/0 group-hover:bg-wine/10 transition-colors duration-300"></div>
-                    </div>
-                    <div class="p-8 flex flex-col gap-3 flex-grow">
-                        <h3 class="text-3xl md:text-2xl lg:text-3xl font-serif text-wine-dark leading-tight">Embutidos</h3>
-                        <p class="text-charcoal/70 font-light text-sm md:text-base mb-4">Descubre nuestra fina selección de jamones, salamis y charcutería de origen internacional.</p>
-                        <div class="mt-auto pt-6 border-t border-charcoal/10">
-                            <a class="block w-full text-center border-2 border-wine text-wine py-3.5 text-sm font-medium rounded-full hover:bg-wine hover:text-white transition-all duration-300" href="https://wa.me/5581333256?text=Hola, me gustaría recibir el catálogo de Embutidos.">Ver Catálogo</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Categoria 3: Lácteos -->
-                <div class="bg-white rounded-[2.5rem] overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 group border border-cream-dark flex flex-col">
-                    <div class="aspect-[4/5] w-full overflow-hidden relative">
-                        <img alt="Lácteos Premium" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://images.unsplash.com/photo-1628088062854-d1870b4553da?q=80&w=800&auto=format&fit=crop">
-                        <div class="absolute inset-0 bg-wine/0 group-hover:bg-wine/10 transition-colors duration-300"></div>
-                    </div>
-                    <div class="p-8 flex flex-col gap-3 flex-grow">
-                        <h3 class="text-3xl md:text-2xl lg:text-3xl font-serif text-wine-dark leading-tight">Lácteos</h3>
-                        <p class="text-charcoal/70 font-light text-sm md:text-base mb-4">Mantequillas, cremas y productos lácteos de origen natural para enriquecer tus recetas.</p>
-                        <div class="mt-auto pt-6 border-t border-charcoal/10">
-                            <a class="block w-full text-center border-2 border-wine text-wine py-3.5 text-sm font-medium rounded-full hover:bg-wine hover:text-white transition-all duration-300" href="https://wa.me/5581333256?text=Hola, me gustaría recibir el catálogo de Lácteos.">Ver Catálogo</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
     </main>
 
     <!-- Floating Rounded Footer Responsivo -->
